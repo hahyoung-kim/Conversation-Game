@@ -7,7 +7,7 @@ Conversation Game
   "ifid": "0AB1CBD0-9B1F-4310-BE05-189751E0B9EB",
   "format": "Harlowe",
   "format-version": "3.3.8",
-  "start": "Meeting Nelly 1",
+  "start": "Title Screen",
   "zoom": 1
 }
 
@@ -72,3 +72,9 @@ Nelly: -smiles- How about we put your lucky pistol on the line? I've got a taste
 
 
 [[Next->Meeting Nelly 10]]
+
+
+:: Title Screen {"position":"250,200","size":"100,100"}
+Wild Oceans West
+
+[[Play->Meeting Nelly 1]]
