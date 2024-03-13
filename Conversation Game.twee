@@ -12,9 +12,17 @@ Conversation Game
 }
 
 
-:: Meeting Nelly 1 {"position":"400,200","size":"100,100"}
--Lottie’s scans the room and her eyes lock onto the dartboard-
-Lottie: Well, well, look who's showing off their aim tonight
+:: Meeting Nelly 1 {"position":"375,200","size":"100,100"}
+//(Lottie’s scans the room and her eyes lock onto the dartboard)//
+(text-colour:yellow)[''Lottie'': Well, well, look who's showing off their aim tonight]
+(text-colour:magenta)[''???:''Admire away. Just trying to keep my skills sharp. Can't let the rust set in now, can we? But don't get too distracted by my skills, darling.]
+(text-colour:yellow)[''Lottie'': //(Laughs)// My name is Lottie Burnham. ]
+(text-colour:magenta)[''???:'' Nelly Collins]
+//(Lottie makes her way over to the dartboard. As she approaches, Nelly's gaze drifts to Lottie's pistol.)//
+(text-colour:magenta)[''Nelly'': That's quite the piece you've got there. Mind if I take a closer look?]
+(text-colour:yellow)[''[Lottie]:'' Careful now. That's my lucky charm you're holding.]
+(text-colour:magenta)[''Nelly:'' Looks like it's seen its fair share of action]
+(text-colour:yellow)[''Lottie:'' You could say that. But enough about my pistol. How about we make things interesting? Care to place a bet on our next round of darts?]
 
 [[Next->Meeting Nelly 2]]
 
@@ -25,56 +33,34 @@ Lottie: You've got guts, I'll give you that, Nelly. But if you're willing to bet
 
 
 :: Meeting Nelly 2 {"position":"550,200","size":"100,100"}
-??: Admire away. Just trying to keep my skills sharp. Can't let the rust set in now, can we? But don't get too distracted by my skills, darling
+(text-colour:magenta)[''Nelly:'' [smiles] How about we put your lucky pistol on the line? I've got a taste for luxury, and that beauty looks like it could fetch a pretty penny.]
+(text-colour:yellow)[''Lottie:'' You've got guts, I'll give you that, Nelly. But if you're willing to bet your skills against my pistol, who am I to refuse a challenge?]
 
-[[Next->Meeting Nelly 3]]
-
-
-:: Meeting Nelly 3 {"position":"700,200","size":"100,100"}
-Lottie: -Laughs- My name is Lottie Burnham.
-
-[[Next->Meeting Nelly 4]]
+(text-colour:cyan)[[[Lottie Wins->Meeting Nelly 3]]
+(text-colour:cyan)[][[Nelly Wins->Meeting Nelly 4]]]
 
 
-:: Meeting Nelly 4 {"position":"850,200","size":"100,100"}
-Nelly: Nelly Collins.
 
-[[Next->Meeting Nelly 5]]
-
-
-:: Meeting Nelly 5 {"position":"1000,200","size":"100,100"}
--Lottie makes her way over to the dartboard. As she approaches, Nelly's gaze drifts to Lottie's pistol-
-Nelly: That's quite the piece you've got there. Mind if I take a closer look-
-
-[[Next->Meeting Nelly 6]]
+:: Meeting Nelly 3 {"position":"775,75","size":"100,100"}
+(text-colour:yellow)[''Lottie'': Looks like luck was on my side tonight Nelly. Your sharpshooting skills are impressive. I’ve got a proposition for you. I’m forming a crew to pull off the heist of the century]
+(text-colour:magenta)[''Nelly'': A heist? Now that sounds like my kind of challenge. Tell me more!]
+(text-colour:yellow)[''Lottie'': There’s a train that's passing through Rustvale tomorrow night with a shipment full of gold. I’m planning on getting it before another gang does. How about it?]
+(text-colour:magenta)[''Nelly'': Count me in but only if we have a crew capable of pulling this off.]
+(text-colour:yellow)[''Lottie'':// (determined)// Leave that to me, Nelly. I'll round up the best of the best, and we'll meet back here tomorrow night to iron out the details.]
 
 
-:: Meeting Nelly 6 {"position":"1150,200","size":"100,100"}
-Lottie: Careful now. That's my lucky charm you're holding.
-
-[[Next->Meeting Nelly 7]]
 
 
-:: Meeting Nelly 7 {"position":"1300,200","size":"100,100"}
-Nelly: Looks like it's seen its fair share of action
-
-[[Next->Meeting Nelly 8]]
-
-
-:: Meeting Nelly 8 {"position":"1450,200","size":"100,100"}
-Lottie: You could say that. But enough about my pistol. How about we make things interesting? Care to place a bet on our next round of darts?
-
-[[Next->Meeting Nelly 9]]
+:: Meeting Nelly 4 {"position":"775,300","size":"100,100"}
+(text-colour:magenta)[''Nelly'': //(smirking triumphantly)// Looks like luck was on my side tonight, Lottie. Hand over that pistol, darling.]
+(text-colour:yellow)[''Lottie'': Well Played. How about instead of my pistol, a proposition? You ever heard of the train that's passing through Rustvale tomorrow night?]
+(text-colour:magenta)[''Nelly'': Can't say I have, but but I'm guessing you're about to fill me in]
+(text-colour:yellow)[''Lottie'': //(grinning)// That train's carrying a shipment of gold, and I want to get to it before another wild west gang does. With your sharpshooting skills, I reckon we could beat them to the punch.]
+(text-colour:magenta)[''Nelly'': A heist? Now that sounds like my kind of challenge. Count me in but only if we have a crew capable of pulling this off.]
+(text-colour:yellow)[''Lottie'': //(determined)// Leave that to me, Nelly. I'll round up the best of the best, and we'll meet back here tomorrow night to iron out the details.]
 
 
-:: Meeting Nelly 9 {"position":"1600,200","size":"100,100"}
-Nelly: -smiles- How about we put your lucky pistol on the line? I've got a taste for luxury, and that beauty looks like it could fetch a pretty penny.
-
-
-[[Next->Meeting Nelly 10]]
-
-
-:: Title Screen {"position":"250,200","size":"100,100"}
+:: Title Screen {"position":"75,100","size":"100,100"}
 Wild Oceans West
 
 [[Play->Meeting Nelly 1]]
