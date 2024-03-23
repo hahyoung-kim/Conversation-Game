@@ -92,7 +92,7 @@ Conversation Game
 
 //Gosh, kids really are stubborn huh. He must really look up to us outlaws. But still, I can’t risk any kids runnin’ their mouths off to anyone… I’d best be off to the seamstress to get this rip stitched up. I still don't know where the seamtress is. I guess I'll just head wherever my feet take me and hope it lands me where I need to be. I left Timmy behind as he begins to pick up his groceries off the ground. He stares angrily at his feet for a moment before shaking his head and slowly trudging towards what I assume is the town seamstress.//
 
-(text-colour:cyan)[[[ Next->Meeting Eleanor 1]]]
+(text-colour:cyan)[[[ Next->Meeting Eleanor 3]]]
 
 
 :: Help the boy up 1 {"position":"625,525","size":"100,100"}
@@ -116,6 +116,39 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 
 :: Meeting Eleanor 1 {"position":"675,1175","size":"100,100"}
+//Timmy bursts into the seamstress’s shop with a loud greeting.//
+
+(text-colour:orange)[''Timmy'': Hi Miss Lawrence! Hi Miss Martinez! I got your things for you!]
+//I looked around the shop. It’s small and stuffed full of dresses and suits in various states of completion. A lone woman sits behind the counter, tucked away behind a rather impressively large stack of spools of thread and fabrics. She glances up when Timmy speaks but otherwise makes no sound or movement.//
+
+//Timmy turns towards me.//
+(text-colour:orange)[''Timmy'': Oh! It looks like Miss Lawrence is out for today. Hm, that’s alright. Don’t tell anyone I said this, but Miss Martinez is way better at fixing clothes than Miss Lawrence.]
+//At Timmy's statement, the quiet Miss Martinez lets out a soft snort.//
+(text-colour:orange)[''Timmy'': Hehe, Miss Martinez, I put your things under the table, okay? Bye bye!]
+
+(text-colour:cyan)[[[ Next->Meeting Eleanor 2]]]
+
+
+
+:: Meeting Eleanor 2 {"position":"675,1300","size":"100,100"}
+//Guess I should talk to the seamstress.//
+(text-colour:yellow)[Lottie: ‘Scuse me?]
+(text-colour:purple)[Martinez: …]
+//Must not be one for words.//
+(text-colour:yellow)[Lottie: Hey there, I got a rip in my skirt and I’m looking to get it fixed.]
+(text-colour:purple)[Martinez: I am busy right now. Please wait.]
+//She’s not even bothering to look at me!//
+
+
+(text-colour:cyan)[[[Wait for the seamstress  ->Wait for the seamstress 1]]] | (text-colour:cyan)[[[Poke around the store->Poke around the store 1]]] | (text-colour:cyan)[[[ Mention Timmy->Mention Timmy 1]]]
+
+
+:: Meeting Eleanor 3 {"position":"825,1225","size":"100,100"}
+//I managed to find the seamstress after a few minutes of walking. As I enter the store, Timmy, the boy who had bumped into me earlier runs out of the store. I definitely could’ve saved a bit of my time if I’d asked the kid for directions. Oh well, I’m here now.//
+
+//I looked around the shop. It’s small and stuffed full of dresses and suits in various states of completion. A lone woman sits behind the counter, tucked away behind a rather impressively large stack of spools of thread and fabrics. She glances up when Timmy speaks but otherwise makes no sound or movement.//
+
+[[Next ->Meeting Eleanor 2]]
 
 
 
@@ -242,6 +275,20 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[Help the boy up->Help the boy up 1]]] | (text-colour:cyan)[[[Be mean to the boy->Be mean to the boy 1]]] | (text-colour:cyan)[[[ Ignore the boy entirely->Meeting Eleanor 1]]]
 
 
+:: Mention Timmy 1 {"position":"550,1425","size":"100,100"}
+(text-colour:yellow)[Lottie: So, Timmy runs errands for you sometimes?]
+(text-colour:purple)[Martinez: … Yes, he needs the money.]
+(text-colour:yellow)[Lottie: How generous of you to help the little lad out.]
+//Martinez scoffs.//
+(text-colour:purple)[Martinez: It is not my money. Mistress Lawrence pays for Timmy Timmerman’s time.]
+//Timmerman? Is that Timmy’s actual last name?//
+(text-colour:yellow)[Lottie: That’s awful nice of her. These are her groceries, then?]
+(text-colour:purple)[Martinez: … No.]
+(text-colour:yellow)[Lottie: So… Mistress Lawrence pays for your groceries?]
+//Martinez makes a face like she’s eaten something sour and doesn’t respond.I’m right, but it doesn’t look like she’s happy about it. I don’t think she’ll say anything else about Timmy.//
+(text-colour:cyan)[[[Wait for the seamstress  ->Wait for the seamstress 1]]] | (text-colour:cyan)[[[Poke around the store->Poke around the store 1]]] 
+
+
 :: Offer him a possibility to be on the team 1 {"position":"975,1025","size":"100,100"}
 //I sighed before I could agree.//
 (text-colour:yellow)[''Lottie'':  …Okay.]
@@ -308,6 +355,10 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[ Next->Meeting Eleanor 1]]]
 
 
+:: Poke around the store 1 {"position":"800,1425","size":"100,100"}
+
+
+
 :: Refuse his request 1 {"position":"1100,1025","size":"100,100"}
 (text-colour:yellow)[''Lottie'': Sorry, kid. No can do. I can’t be bringing a kid to a heist. I trust you, though. You can keep this quiet can’t you?]
 
@@ -315,7 +366,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 //Guess I crushed his hopes right there. I probably should’ve asked him to show me where the seamstress is, but something tells me that he doesn’t want to see my face right now. I guess I'll just head wherever my feet take me and hope it lands me where I need to be.//
 
-(text-colour:cyan)[[[ Next->Meeting Eleanor 1]]]
+(text-colour:cyan)[[[ Next->Meeting Eleanor 3]]]
 
 
 :: Reveal that you’re an outlaw 1 {"position":"500,900","size":"100,100"}
@@ -359,3 +410,11 @@ The town was similar to others I've spent time in. Before I get too into plannin
 Wild Oceans West
 
 [[Play->Introduction]]
+
+
+:: Wait for the seamstress 1 {"position":"675,1425","size":"100,100"}
+(text-colour:yellow)[Lottie: …]
+(text-colour:purple)[Martinez: …]
+//This is awkward. I didn't really plan on all this waiting around.//
+(text-colour:cyan)[[[Poke around the store->Poke around the store 1]]]
+
