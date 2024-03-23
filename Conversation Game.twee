@@ -12,13 +12,87 @@ Conversation Game
 }
 
 
-:: Meeting Nelly 1 {"position":"375,200","size":"100,100"}
-//(Lottie’s scans the room and her eyes lock onto the dartboard)//
+:: \ Saloon 2 {"position":"425,100","size":"100,100"}
+//The bartender turned away to prepare my drink. The saloon was pretty empty and only filled with the usuals it seemed. Except there a woman throwing darts and a younger man shooting back whiskey which didn't appear to be something he usually did. //
+
+[[Talk to the woman throwing darts ->Meeting Nelly 1]]
+[[Talk to the man shooting back whiskey->Meeting Eugene 1]]
+
+
+:: Introduction {"position":"200,100","size":"100,100"}
+//The wild bunch forced me out, but I know what they were planning. They think they can plan a heist without me. I’d like to see them try. I have an idea of when the train is going to pass through Rustvale. Though it’s a town I’m unfamiliar with. If I can just get a crew together in time, robbing the train will be easy. 
+
+The town was similar to others I've spent time in. Before I get too into planning I should probably grab a drink. I noticed a Saloon a bit in the distance, it seems promising enough.// 
+
+[[Enter the Saloon->Saloon Start]]
+
+
+:: Meeting Eugene 1 {"position":"200,300","size":"100,100"}
+//At the bar there appeared to be a man drinking some sort of sorrow away. He wasn’t showing the emotion in his face, but it was all in the way he was sittin’. He had a revolver attached to his hip. Maybe that meant trouble. And for some reason I could not shake that his face looked familiar.//
+
+(text-colour:yellow)[Lottie: Not sure that whiskey is going to solve your problem.]
+//He laughed to himself, his gaze still focusing down.//
+(text-colour:blue)[???: I realized that after the first.]
+(text-colour:yellow)[Lottie: Is this a usual spot for you?]
+(text-colour:blue)[???: I’m around, I'm assuming you’re also not one to stick around a place too long.]
+(text-colour:yellow)[Lottie: bold assumption for someone who doesn’t know my name.] 
+(text-colour:blue)[Eugene: So we’re not skippin pleasantries. I’m Eugene and you?]
+
+
+[[Next->Meeting Eugene 2]]
+
+
+
+:: Meeting Eugene 2 {"position":"325,300","size":"100,100"}
+(text-colour:yellow)[Lottie: Lottie ]
+
+//I’ve had run-ins with this man before that’s why he was so familiar. My old group was not particularly fond of this outlaw//
+
+[[Lottie: Since you seem to know so much about me. What are you doing in this good for nothing town ->Meeting Eugene 3]]
+
+[[And do I get the honors of knowing what sorrow you’re drinking away? ->Meeting Eugene 4]]
+
+
+:: Meeting Eugene 3 {"position":"425,300","size":"100,100"}
+(text-colour:blue)[Eugene: Not too sure that’s something I want to disclose with someone like you.]
+(text-colour:yellow)[Lottie: Someone like me?]
+(text-colour:blue)[Eugene: Pistol, well built, I’m guessing you’re after some sort of money.]
+(text-colour:yellow)[Lottie: Right. And someone like you is not after the same.]
+(text-colour:blue)[Eugene: I never said I wasn’t. But I’m not here for that. I’m trying to lay low. ]
+(text-colour:yellow)[Lottie: Aren’t we all. I guess if you are looking for trouble you know where to find me.]
+(text-colour:blue)[Eugene: I was never one to turn down trouble.] 
+
+(if: not ((history:) contains "Meeting Nelly 1"))[ [[Talk to the woman throwing darts->Meeting Nelly 1]]]
+(if: ((history:) contains "Meeting Nelly 1"))[ [[Continue->Pay Bartender]]]
+
+
+:: Meeting Eugene 4 {"position":"550,300","size":"100,100"}
+(text-colour:blue)[Eugene: I went after something I shouldn’t have. Paid the price for it. ]
+(text-colour:yellow)[Lottie: What was the price this time?]
+
+//I could tell even thinking about it was paining him. He paused before he spoke as if he was trying to find the right words.//
+
+(text-colour:blue)[Eugene: One that was too great.]
+(text-colour:yellow)[Lottie: So now you’re taking a break from our line of work.] 
+(text-colour:blue)[Eugene: Hard for me to stay away. If I hear of something worth it I might change my mind.]
+(text-colour:yellow)[Lottie: I might have something worth your time.] 
+(text-colour:blue)[Eugene: I’m listening.]
+(text-colour:yellow)[Lottie: For now it’s going secret, but if I decide to share can I find you here?]
+(text-colour:blue)[Eugene: Sure.]
+(text-colour:yellow)[Lottie: You know how to fire that revolver?]
+(text-colour:blue)[Eugene: With my eyes closed.]
+
+(if: not ((history:) contains "Meeting Nelly 1"))[ [[Talk to the woman throwing darts->Meeting Nelly 1]]]
+(if: ((history:) contains "Meeting Nelly 1"))[ [[Continue->Pay Bartender]]]
+
+
+:: Meeting Nelly 1 {"position":"425,200","size":"100,100"}
 (text-colour:yellow)[''Lottie'': Well, well, look who's showing off their aim tonight]
 (text-colour:magenta)[''???:''Admire away. Just trying to keep my skills sharp. Can't let the rust set in now, can we? But don't get too distracted by my skills, darling.]
-(text-colour:yellow)[''Lottie'': //(Laughs)// My name is Lottie Burnham. ]
+//I laughed//
+(text-colour:yellow)[''Lottie'':  My name is Lottie Burnham. ]
 (text-colour:magenta)[''???:'' Nelly Collins]
-//(Lottie makes her way over to the dartboard. As she approaches, Nelly's gaze drifts to Lottie's pistol.)//
+//I make my way over to the dartboard. As I approach, Nelly's gaze drifts to my pistol.//
 (text-colour:magenta)[''Nelly'': That's quite the piece you've got there. Mind if I take a closer look?]
 (text-colour:yellow)[''[Lottie]:'' Careful now. That's my lucky charm you're holding.]
 (text-colour:magenta)[''Nelly:'' Looks like it's seen its fair share of action]
@@ -31,36 +105,77 @@ Conversation Game
 Lottie: You've got guts, I'll give you that, Nelly. But if you're willing to bet your skills against my pistol, who am I to refuse a challenge?
 
 
-
 :: Meeting Nelly 2 {"position":"550,200","size":"100,100"}
-(text-colour:magenta)[''Nelly:'' [smiles] How about we put your lucky pistol on the line? I've got a taste for luxury, and that beauty looks like it could fetch a pretty penny.]
+//Nelly flashes me a smile.//
+(text-colour:magenta)[''Nelly:'' How about we put your lucky pistol on the line? I've got a taste for luxury, and that beauty looks like it could fetch a pretty penny.]
 (text-colour:yellow)[''Lottie:'' You've got guts, I'll give you that, Nelly. But if you're willing to bet your skills against my pistol, who am I to refuse a challenge?]
 
 (text-colour:cyan)[[[Lottie Wins->Meeting Nelly 3]]
 (text-colour:cyan)[][[Nelly Wins->Meeting Nelly 4]]]
 
 
-
-:: Meeting Nelly 3 {"position":"775,75","size":"100,100"}
+:: Meeting Nelly 3 {"position":"675,75","size":"100,100"}
 (text-colour:yellow)[''Lottie'': Looks like luck was on my side tonight Nelly. Your sharpshooting skills are impressive. I’ve got a proposition for you. I’m forming a crew to pull off the heist of the century]
 (text-colour:magenta)[''Nelly'': A heist? Now that sounds like my kind of challenge. Tell me more!]
 (text-colour:yellow)[''Lottie'': There’s a train that's passing through Rustvale tomorrow night with a shipment full of gold. I’m planning on getting it before another gang does. How about it?]
 (text-colour:magenta)[''Nelly'': Count me in but only if we have a crew capable of pulling this off.]
 (text-colour:yellow)[''Lottie'':// (determined)// Leave that to me, Nelly. I'll round up the best of the best, and we'll meet back here tomorrow night to iron out the details.]
 
+(if: not ((history:) contains "Meeting Eugene 1"))[ [[Talk to the man shooting back whiskey->Meeting Eugene 1]]]
+(if: ((history:) contains "Meeting Eugene 1"))[ [[Continue->Pay Bartender]]]
 
 
-
-:: Meeting Nelly 4 {"position":"775,300","size":"100,100"}
-(text-colour:magenta)[''Nelly'': //(smirking triumphantly)// Looks like luck was on my side tonight, Lottie. Hand over that pistol, darling.]
+:: Meeting Nelly 4 {"position":"675,200","size":"100,100"}
+//She smirks triumphantly.//
+(text-colour:magenta)[''Nelly'': Looks like luck was on my side tonight, Lottie. Hand over that pistol, darling.]
 (text-colour:yellow)[''Lottie'': Well Played. How about instead of my pistol, a proposition? You ever heard of the train that's passing through Rustvale tomorrow night?]
 (text-colour:magenta)[''Nelly'': Can't say I have, but but I'm guessing you're about to fill me in]
-(text-colour:yellow)[''Lottie'': //(grinning)// That train's carrying a shipment of gold, and I want to get to it before another wild west gang does. With your sharpshooting skills, I reckon we could beat them to the punch.]
+//I couldn't help but grin.//
+(text-colour:yellow)[''Lottie'':  That train's carrying a shipment of gold, and I want to get to it before another wild west gang does. With your sharpshooting skills, I reckon we could beat them to the punch.]
 (text-colour:magenta)[''Nelly'': A heist? Now that sounds like my kind of challenge. Count me in but only if we have a crew capable of pulling this off.]
-(text-colour:yellow)[''Lottie'': //(determined)// Leave that to me, Nelly. I'll round up the best of the best, and we'll meet back here tomorrow night to iron out the details.]
+(text-colour:yellow)[''Lottie'': Leave that to me, Nelly. I'll round up the best of the best, and we'll meet back here tomorrow night to iron out the details.]
+(if: not ((history:) contains "Meeting Eugene 1"))[ [[Talk to the man shooting back whiskey->Meeting Eugene 1]]]
+(if: ((history:) contains "Meeting Eugene 1"))[ [[Continue->Pay Bartender]]]
+
+
+:: Meeting Timmy 1 {"position":"575,425","size":"100,100"}
+
+
+
+:: Pay Bartender {"position":"425,425","size":"100,100"}
+//Both of those fellows seem like they could be what I need. I just need to pay my tab before I'm off to find more options. //
+
+Bartender: If my ears don't deceive me, I hear you are looking for people. Well there's this seamstress in town who skills are not just sewing.
+
+//He winked and smirked. I paid what I owed.//
+
+(text-colour:yellow)[Lottie: And where can I find this seamstress.]
+
+Bartender: Just down the road you won't miss her shop. 
+
+//At least I knew where I was going next.//
+
+[[Head to meet the seamstress ->Meeting Timmy 1]]
+
+
+:: Saloon Start {"position":"325,100","size":"100,100"}
+//Saloon was extacly what I expected it to be. A few drunks getting their daily drinks and a bartender barely interested in the people he was serving.//
+
+(text-colour:yellow)[Lottie: What's a girl gotta do to get a drink around here?]
+
+//The bartender stopped cleaning a glass and headed in my direction.//
+
+Bartender: And what would you be having
+
+//I smiled sweetly//
+
+(text-colour:yellow)[Lottie: Whatever's your favorite to make]
+
+[[Next-> Saloon 2]]
+
 
 
 :: Title Screen {"position":"75,100","size":"100,100"}
 Wild Oceans West
 
-[[Play->Meeting Nelly 1]]
+[[Play->Introduction]]
