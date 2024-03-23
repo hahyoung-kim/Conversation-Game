@@ -124,56 +124,56 @@ The town was similar to others I've spent time in. Before I get too into plannin
 :: Meeting Eugene 1 {"position":"625,125","size":"100,100"}
 //At the bar there appeared to be a man drinking some sort of sorrow away. He wasn’t showing the emotion in his face, but it was all in the way he was sittin’. He had a revolver attached to his hip. Maybe that meant trouble. And for some reason I could not shake that his face looked familiar.//
 
-(text-colour:yellow)[Lottie: Not sure that whiskey is going to solve your problem.]
+(text-colour:yellow)[''Lottie'': Not sure that whiskey is going to solve your problem.]
 //He laughed to himself, his gaze still focusing down.//
-(text-colour:blue)[???: I realized that after the first.]
-(text-colour:yellow)[Lottie: Is this a usual spot for you?]
-(text-colour:blue)[???: I’m around, I'm assuming you’re also not one to stick around a place too long.]
-(text-colour:yellow)[Lottie: bold assumption for someone who doesn’t know my name.] 
-(text-colour:blue)[Eugene: So we’re not skippin pleasantries. I’m Eugene and you?]
+(text-colour:blue)[''???'': I realized that after the first.]
+(text-colour:yellow)[''Lottie'': Is this a usual spot for you?]
+(text-colour:blue)[''???'': I’m around, I'm assuming you’re also not one to stick around a place too long.]
+(text-colour:yellow)[''Lottie'': bold assumption for someone who doesn’t know my name.] 
+(text-colour:blue)[''Eugene'': So we’re not skippin pleasantries. I’m Eugene and you?]
 
 
 [[Next->Meeting Eugene 2]]
 
 
 :: Meeting Eugene 2 {"position":"750,125","size":"100,100"}
-(text-colour:yellow)[Lottie: Lottie ]
+(text-colour:yellow)[''Lottie'': Lottie ]
 
 //I’ve had run-ins with this man before that’s why he was so familiar. My old group was not particularly fond of this outlaw//
 
-[[Lottie: Since you seem to know so much about me. What are you doing in this good for nothing town ->Meeting Eugene 3]]
+[[''Lottie'': Since you seem to know so much about me. What are you doing in this good for nothing town ->Meeting Eugene 3]]
 
 [[And do I get the honors of knowing what sorrow you’re drinking away? ->Meeting Eugene 4]]
 
 
 :: Meeting Eugene 3 {"position":"875,125","size":"100,100"}
-(text-colour:blue)[Eugene: Not too sure that’s something I want to disclose with someone like you.]
-(text-colour:yellow)[Lottie: Someone like me?]
-(text-colour:blue)[Eugene: Pistol, well built, I’m guessing you’re after some sort of money.]
-(text-colour:yellow)[Lottie: Right. And someone like you is not after the same.]
-(text-colour:blue)[Eugene: I never said I wasn’t. But I’m not here for that. I’m trying to lay low. ]
-(text-colour:yellow)[Lottie: Aren’t we all. I guess if you are looking for trouble you know where to find me.]
-(text-colour:blue)[Eugene: I was never one to turn down trouble.] 
+(text-colour:blue)[''Eugene'': Not too sure that’s something I want to disclose with someone like you.]
+(text-colour:yellow)[''Lottie'': Someone like me?]
+(text-colour:blue)[''Eugene'': Pistol, well built, I’m guessing you’re after some sort of money.]
+(text-colour:yellow)[''Lottie'': Right. And someone like you is not after the same.]
+(text-colour:blue)[''Eugene'': I never said I wasn’t. But I’m not here for that. I’m trying to lay low. ]
+(text-colour:yellow)[''Lottie'': Aren’t we all. I guess if you are looking for trouble you know where to find me.]
+(text-colour:blue)[''Eugene'': I was never one to turn down trouble.] 
 
 (if: not ((history:) contains "Meeting Nelly 1"))[ [[Talk to the woman throwing darts->Meeting Nelly 1]]]
 (if: ((history:) contains "Meeting Nelly 1"))[ [[Continue->Pay Bartender]]]
 
 
 :: Meeting Eugene 4 {"position":"1000,125","size":"100,100"}
-(text-colour:blue)[Eugene: I went after something I shouldn’t have. Paid the price for it. ]
-(text-colour:yellow)[Lottie: What was the price this time?]
+(text-colour:blue)[''Eugene'': I went after something I shouldn’t have. Paid the price for it. ]
+(text-colour:yellow)[''Lottie'': What was the price this time?]
 
 //I could tell even thinking about it was paining him. He paused before he spoke as if he was trying to find the right words.//
 
-(text-colour:blue)[Eugene: One that was too great.]
-(text-colour:yellow)[Lottie: So now you’re taking a break from our line of work.] 
-(text-colour:blue)[Eugene: Hard for me to stay away. If I hear of something worth it I might change my mind.]
-(text-colour:yellow)[Lottie: I might have something worth your time.] 
-(text-colour:blue)[Eugene: I’m listening.]
-(text-colour:yellow)[Lottie: For now it’s going secret, but if I decide to share can I find you here?]
-(text-colour:blue)[Eugene: Sure.]
-(text-colour:yellow)[Lottie: You know how to fire that revolver?]
-(text-colour:blue)[Eugene: With my eyes closed.]
+(text-colour:blue)[''Eugene'': One that was too great.]
+(text-colour:yellow)[''Lottie'': So now you’re taking a break from our line of work.] 
+(text-colour:blue)[''Eugene'': Hard for me to stay away. If I hear of something worth it I might change my mind.]
+(text-colour:yellow)[''Lottie'': I might have something worth your time.] 
+(text-colour:blue)[''Eugene'': I’m listening.]
+(text-colour:yellow)[''Lottie'': For now it’s going secret, but if I decide to share can I find you here?]
+(text-colour:blue)[''Eugene'': Sure.]
+(text-colour:yellow)[''Lottie'': You know how to fire that revolver?]
+(text-colour:blue)[''Eugene'': With my eyes closed.]
 
 (if: not ((history:) contains "Meeting Nelly 1"))[ [[Talk to the woman throwing darts->Meeting Nelly 1]]]
 (if: ((history:) contains "Meeting Nelly 1"))[ [[Continue->Pay Bartender]]]
@@ -266,13 +266,13 @@ The town was similar to others I've spent time in. Before I get too into plannin
 :: Pay Bartender {"position":"625,250","size":"100,100"}
 //Both of those fellows seem like they could be what I need. I just need to pay my tab before I'm off to find more options. //
 
-Bartender: If my ears don't deceive me, I hear you are looking for people. Well there's this seamstress in town who skills are not just sewing.
+''Bartender'': If my ears don't deceive me, I hear you are looking for people. Well there's this seamstress in town who skills are not just sewing.
 
 //He winked and smirked. I paid what I owed.//
 
-(text-colour:yellow)[Lottie: And where can I find this seamstress.]
+(text-colour:yellow)[''Lottie'': And where can I find this seamstress.]
 
-Bartender: Just down the road you won't miss her shop. 
+''Bartender'': Just down the road you won't miss her shop. 
 
 //At least I knew where I was going next.//
 
@@ -342,11 +342,11 @@ Bartender: Just down the road you won't miss her shop.
 :: Saloon Start {"position":"325,100","size":"100,100"}
 //Saloon was extacly what I expected it to be. A few drunks getting their daily drinks and a bartender barely interested in the people he was serving.//
 
-(text-colour:yellow)[Lottie: What's a girl gotta do to get a drink around here?]
+(text-colour:yellow)[''Lottie'': What's a girl gotta do to get a drink around here?]
 
 //The bartender stopped cleaning a glass and headed in my direction.//
 
-Bartender: And what would you be having
+''Bartender'': And what would you be having
 
 //I smiled sweetly//
 
