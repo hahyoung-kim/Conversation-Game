@@ -12,11 +12,23 @@ Conversation Game
 }
 
 
+:: \ Ask about her past directly 1 {"position":"900,2050","size":"100,100"}
+
+
+
 :: \ Saloon 2 {"position":"450,100","size":"100,100"}
 //The bartender turned away to prepare my drink. The saloon was pretty empty and only filled with the usuals it seemed. Except there a woman throwing darts and a younger man shooting back whiskey which didn't appear to be something he usually did. //
 
 [[Talk to the woman throwing darts ->Meeting Nelly 1]]
 [[Talk to the man shooting back whiskey->Meeting Eugene 1]]
+
+
+:: \ She’s lying 1 {"position":"900,2175","size":"100,100"}
+
+
+
+:: \ Watch her work for a while 1 {"position":"775,2175","size":"100,100"}
+
 
 
 :: Be mean to the boy 1 {"position":"750,525","size":"100,100"}
@@ -95,6 +107,18 @@ Conversation Game
 (text-colour:cyan)[[[ Next->Meeting Eleanor 3]]]
 
 
+:: Give her the needle back 1 {"position":"775,2050","size":"100,100"}
+(text-colour:yellow)[''Lottie'': Here. You’ll probably need this needle to finish that dress.]
+(text-colour:purple)[''Eleanor'': … Thank you. It wasn’t good of me to throw that.]
+(text-colour:yellow)[''Lottie'': No harm no foul. I guess I’m lucky you aren’t a professional darts thrower, or I’d have a needle stuck in my face, haha.]
+(text-colour:purple)[''Eleanor'': Never. I would never hurt others. Please believe me, miss. I do not hurt people.]
+(text-colour:yellow)[''Lottie'': Oh, I wasn’t… (That was a strange reaction to a joke.) Is there some history to your needle throwing tendencies?]
+(text-colour:purple)[''Eleanor'':  I… No there is not.]
+(text-colour:yellow)[''Lottie'': //(She has quite the obvious tell. Anyone can see that she’s lying.)//]
+
+(text-colour:cyan)[[[ She’s lying  -> She’s lying 1]]] | (text-colour:cyan)[[[ Watch her work for a while -> Watch her work for a while 1]]]
+
+
 :: Help the boy up 1 {"position":"625,525","size":"100,100"}
 //I sighed and bent down to help the boy organize his stuff. After stacking all of the cans, I helped the boy up.//
 (text-colour:yellow)[''Lottie'':  My bad, kid. Where were you headed off to with all this stuff anyways?]
@@ -115,7 +139,38 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Enter the Saloon->Saloon Start]]
 
 
-:: Meeting Eleanor 1 {"position":"675,1175","size":"100,100"}
+:: Keep Poking 1 {"position":"775,1675","size":"100,100"}
+//Lottie continues to dig around the store, even bending down slightly to look under things.//
+
+(text-colour:purple)[''Martinez'': Madam, please stop that. It is distracting.]
+(text-colour:yellow)[''Lottie'': //(Gotcha, Miss Seamstress.)//]
+
+(text-colour:cyan)[[[Give Up ->Wait for the seamstress 2]]] | (text-colour:cyan)[[[Keep Poking ->Keep Poking 2]]]
+
+
+:: Keep Poking 2 {"position":"775,1800","size":"100,100"}
+//Lottie continues to poke around the store. She’s gone as far as to lift up tablecloths to see what’s underneath. This goes on for at most a minute before the seamstress becomes incredibly fed up with her.//
+//*TNK*.//
+
+(text-colour:yellow)[''Lottie'': //(... tnk?)//]
+//Lottie looks over at Martinez who is now standing with her arm outstretched in front of her. Lottie then slowly looks down to find a small sewing needle rolling on the ground.//
+(text-colour:purple)[''Martinez'': Madam, please leave.]
+(text-colour:yellow)[''Lottie'': …You kidding me? That kind of reaction doesn’t come from outta nowhere. You’re a real interesting person, and I certainly can’t go around calling someone this interesting by her last name. Can I get a first name to call you by, Miss Martinez?]
+
+(text-colour:cyan)[[[Next ->Keep Poking 3]]]
+
+
+
+:: Keep Poking 3 {"position":"775,1925","size":"100,100"}
+//Martinez glares at Lottie, slowly smoothing her skirt and sitting back down. However, she doesn’t pick up the dress she was working on, choosing to stare angrily at the needle near Lottie.//
+
+(text-colour:purple)[''Martinez'': …Eleanor. My name is Eleanor Martinez.]
+(text-colour:yellow)[''Lottie'': //(I’ll bet she’s regretting throwing this needle at me. She’s definitely not as good of a shot as Nellie, but she’s got a history and I absolutely want to know what it is. Maybe I can even ask her to join my little team of heisters.)//]
+
+(text-colour:cyan)[[[Give her the needle back  ->Give her the needle back 1]]] | (text-colour:cyan)[[[ Ask about her past directly -> Ask about her past directly 1]]]
+
+
+:: Meeting Eleanor 1 {"position":"650,1300","size":"100,100"}
 //Timmy bursts into the seamstress’s shop with a loud greeting.//
 
 (text-colour:orange)[''Timmy'': Hi Miss Lawrence! Hi Miss Martinez! I got your things for you!]
@@ -129,27 +184,25 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[ Next->Meeting Eleanor 2]]]
 
 
-
-:: Meeting Eleanor 2 {"position":"675,1300","size":"100,100"}
+:: Meeting Eleanor 2 {"position":"650,1425","size":"100,100"}
 //Guess I should talk to the seamstress.//
-(text-colour:yellow)[Lottie: ‘Scuse me?]
-(text-colour:purple)[Martinez: …]
+(text-colour:yellow)[''Lottie'': ‘Scuse me?]
+(text-colour:purple)[''Martinez'': …]
 //Must not be one for words.//
-(text-colour:yellow)[Lottie: Hey there, I got a rip in my skirt and I’m looking to get it fixed.]
-(text-colour:purple)[Martinez: I am busy right now. Please wait.]
+(text-colour:yellow)[''Lottie'': Hey there, I got a rip in my skirt and I’m looking to get it fixed.]
+(text-colour:purple)[''Martinez'': I am busy right now. Please wait.]
 //She’s not even bothering to look at me!//
 
 
 (text-colour:cyan)[[[Wait for the seamstress  ->Wait for the seamstress 1]]] | (text-colour:cyan)[[[Poke around the store->Poke around the store 1]]] | (text-colour:cyan)[[[ Mention Timmy->Mention Timmy 1]]]
 
 
-:: Meeting Eleanor 3 {"position":"825,1225","size":"100,100"}
+:: Meeting Eleanor 3 {"position":"775,1300","size":"100,100"}
 //I managed to find the seamstress after a few minutes of walking. As I enter the store, Timmy, the boy who had bumped into me earlier runs out of the store. I definitely could’ve saved a bit of my time if I’d asked the kid for directions. Oh well, I’m here now.//
 
 //I looked around the shop. It’s small and stuffed full of dresses and suits in various states of completion. A lone woman sits behind the counter, tucked away behind a rather impressively large stack of spools of thread and fabrics. She glances up when Timmy speaks but otherwise makes no sound or movement.//
 
 [[Next ->Meeting Eleanor 2]]
-
 
 
 :: Meeting Eugene 1 {"position":"625,125","size":"100,100"}
@@ -269,24 +322,24 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 
 :: Meeting Timmy 2 {"position":"750,400","size":"100,100"}
-
 (text-colour:yellow)[//This kid… Is he the one that tore my skirt? He looks kinda pitiful, sitting on the ground like that.//]
 
 (text-colour:cyan)[[[Help the boy up->Help the boy up 1]]] | (text-colour:cyan)[[[Be mean to the boy->Be mean to the boy 1]]] | (text-colour:cyan)[[[ Ignore the boy entirely->Meeting Eleanor 1]]]
 
 
-:: Mention Timmy 1 {"position":"550,1425","size":"100,100"}
-(text-colour:yellow)[Lottie: So, Timmy runs errands for you sometimes?]
-(text-colour:purple)[Martinez: … Yes, he needs the money.]
-(text-colour:yellow)[Lottie: How generous of you to help the little lad out.]
+:: Mention Timmy 1 {"position":"525,1550","size":"100,100"}
+(text-colour:yellow)[''Lottie'': So, Timmy runs errands for you sometimes?]
+(text-colour:purple)[''Martinez'': … Yes, he needs the money.]
+(text-colour:yellow)[''Lottie'': How generous of you to help the little lad out.]
 //Martinez scoffs.//
-(text-colour:purple)[Martinez: It is not my money. Mistress Lawrence pays for Timmy Timmerman’s time.]
+(text-colour:purple)[''Martinez'': It is not my money. Mistress Lawrence pays for Timmy Timmerman’s time.]
 //Timmerman? Is that Timmy’s actual last name?//
-(text-colour:yellow)[Lottie: That’s awful nice of her. These are her groceries, then?]
-(text-colour:purple)[Martinez: … No.]
-(text-colour:yellow)[Lottie: So… Mistress Lawrence pays for your groceries?]
-//Martinez makes a face like she’s eaten something sour and doesn’t respond.I’m right, but it doesn’t look like she’s happy about it. I don’t think she’ll say anything else about Timmy.//
-(text-colour:cyan)[[[Wait for the seamstress  ->Wait for the seamstress 1]]] | (text-colour:cyan)[[[Poke around the store->Poke around the store 1]]] 
+(text-colour:yellow)[''Lottie'': That’s awful nice of her. These are her groceries, then?]
+(text-colour:purple)[''Martinez'': … No.]
+(text-colour:yellow)[''Lottie'': So… Mistress Lawrence pays for your groceries?]
+//Martinez makes a face like she’s eaten something sour and doesn’t respond. I’m right, but it doesn’t look like she’s happy about it. I don’t think she’ll say anything else about Timmy.//
+
+(text-colour:cyan)[[[Wait for the seamstress  ->Wait for the seamstress 1]]] | (text-colour:cyan)[[[Poke around the store->Poke around the store 1]]]
 
 
 :: Offer him a possibility to be on the team 1 {"position":"975,1025","size":"100,100"}
@@ -355,8 +408,12 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[ Next->Meeting Eleanor 1]]]
 
 
-:: Poke around the store 1 {"position":"800,1425","size":"100,100"}
+:: Poke around the store 1 {"position":"775,1550","size":"100,100"}
+(text-colour:yellow)[''Lottie'': //(Hmmm… This store is pretty well stocked. I wonder if there’s any tools that might be useful on the heist.)//]
+// Lottie begins to walk around the store and browses the plentiful skeins of cloth and spools of thread. As she noses around, the seamstress visibly gets annoyed but still remains silent. //
+(text-colour:yellow)[''Lottie'': //(Oh? Got some kinda reaction from that. I gotta get her to talk to me somehow…)//]
 
+(text-colour:cyan)[[[Give Up ->Wait for the seamstress 2]]] | (text-colour:cyan)[[[Keep Poking ->Keep Poking 1]]]
 
 
 :: Refuse his request 1 {"position":"1100,1025","size":"100,100"}
@@ -412,9 +469,17 @@ Wild Oceans West
 [[Play->Introduction]]
 
 
-:: Wait for the seamstress 1 {"position":"675,1425","size":"100,100"}
-(text-colour:yellow)[Lottie: …]
-(text-colour:purple)[Martinez: …]
+:: Wait for the seamstress 1 {"position":"650,1550","size":"100,100"}
+(text-colour:yellow)[''Lottie'': …]
+(text-colour:purple)[''Martinez'': …]
 //This is awkward. I didn't really plan on all this waiting around.//
+
 (text-colour:cyan)[[[Poke around the store->Poke around the store 1]]]
 
+
+:: Wait for the seamstress 2 {"position":"900,1675","size":"100,100"}
+(text-colour:yellow)[''Lottie'': …]
+(text-colour:purple)[''Martinez'': …]
+//This is awkward. I didn't really plan on all this waiting around.//
+
+(text-colour:cyan)[[[Give Up ->Wait for the seamstress 2]]] | (text-colour:cyan)[[[Keep Poking ->Keep Poking 2]]]
