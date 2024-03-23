@@ -105,6 +105,7 @@ Conversation Game
 (text-colour:yellow)[''Lottie'':  Right… Hey, Timmy? Usually outlaws don’t go around yelling that they’re outlaws for all the world to hear. ]
 //(Timmy makes a small noise of realization. He then proceeds to shiftily look around and loudly whisper.)//
 (text-colour:orange)[''Timmy:''I know that! You’re different, though. Y’see, I heard you talkin’ earlier. About a heist! ]
+
 (text-colour:cyan)[[[Deny it->Deny it 1]] | (text-colour:cyan)[][[Play along with him->Play along with him 1]]]
 
 
@@ -331,7 +332,7 @@ Bartender: Just down the road you won't miss her shop.
 
 
 :: Reveal that you’re an outlaw 2 {"position":"500,1025","size":"100,100"}
-(text-colour:orange)[''Timmy:''Thanks, Miss! I won’t let you down!]
+(text-colour:orange)[''Timmy:'' Thanks, Miss! I won’t let you down!]
 (text-colour:yellow)[''Lottie'':  I’m countin’ on it. Now somehow I’ve gotten a rip in my skirt and I need to head to the seamstress myself. Why don’t you show me where she’s at and you can finish up your errands? ]
 //(Timmy is grinning from ear to ear. He nods eagerly before picking his groceries off the ground and running off in, presumably, the direction of the town seamstress. After a moment, Lottie follows the excitable young child.)//
 
