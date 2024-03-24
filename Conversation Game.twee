@@ -160,7 +160,6 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[Next ->Keep Poking 3]]]
 
 
-
 :: Keep Poking 3 {"position":"775,1925","size":"100,100"}
 //Martinez glares at Lottie, slowly smoothing her skirt and sitting back down. However, she doesn’t pick up the dress she was working on, choosing to stare angrily at the needle near Lottie.//
 
@@ -168,6 +167,41 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:yellow)[''Lottie'': //(I’ll bet she’s regretting throwing this needle at me. She’s definitely not as good of a shot as Nellie, but she’s got a history and I absolutely want to know what it is. Maybe I can even ask her to join my little team of heisters.)//]
 
 (text-colour:cyan)[[[Give her the needle back  ->Give her the needle back 1]]] | (text-colour:cyan)[[[ Ask about her past directly -> Ask about her past directly 1]]]
+
+
+:: Meeting Alfred 1 {"position":"425,2300","size":"100,100"}
+//A man in his late fifties was sitting on the porch in a rocking chair. I almost didn’t want to bother him. He seemed very content with his eyes closed feeling the sun on his skin. I was hoping he was the ranch owner cause I’m just going to assume half of the people in this town don’t have a horse. Having a horse might be helpful if trying to catch a train.//
+
+(text-colour:yellow)[Lottie: ‘Scuse me? Do you know where I can find the owner?]
+(text-colour:red)[???: You’re looking at him. Something I can do for you?]
+(text-colour:yellow)[Lottie: You don’t happen to lend horses do you?]
+(text-colour:red)[???: That depends on what kind of business you plan to do with them.]
+
+//He eyed me up and down. He took particular interest in my pistol. Maybe I should’ve changed up my look when talking to these folks. He then began to speak again.//
+
+[[Next->Meeting Alfred 2]]
+
+
+
+
+:: Meeting Alfred 2 {"position":"525,2300","size":"100,100"}
+(text-colour:red)[???: I’m tired of outlaws coming around here looking for trouble. So if you’re one of them might as well get off my porch now.]
+(text-colour:yellow)[Lottie: I’m not here to cause trouble.] 
+
+//He gave me a look.//
+
+(text-colour:red)[???: Right Miss?]
+(text-colour:yellow)[Lottie: Lottie.]
+(text-colour:red)[???: So what are you here for?]
+(text-colour:yellow)[Lottie: Hopefully a big cash payout, but I promise it’s not in town.]
+
+//I could tell I piqued his interest.//
+
+(text-colour:red)[???: Not in town.]
+//He spoke like it was a question.//
+
+(text-colour:cyan)[[[Tell him the trouble is out of town.->Out of Town]] |[[ Tell him that it is a train robbery.->Train Robbery]]]
+
 
 
 :: Meeting Eleanor 1 {"position":"650,1300","size":"100,100"}
@@ -361,6 +395,26 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[ Next->Meeting Eleanor 1]]]
 
 
+:: Out of Town {"position":"650,2300","size":"100,100"}
+(text-colour:yellow)[Lottie: Not in town a few ways away. That’s why I’m inquiring about some horses. Mister?]
+(text-colour:red)[Alfred: You can call me Alfred, Miss Lottie.] 
+//He said my name almost in a condescending way. He still didn’t trust me.//
+(text-colour:red)[Alfred: I could possibly be interested in lending some horses if that meant I could get a cut. ]
+//He looked around as if he was afraid someone heard.// 
+(text-colour:yellow)[Lottie: I could arrange that if it meant you were helping out.] 
+
+[[Next->Out of Town 2]]
+
+
+
+:: Out of Town 2 {"position":"775,2300","size":"100,100"}
+(text-colour:red)[Alfred: I had some wild days in my past. But I’m not sure how much I could offer now given my aged body.]
+(text-colour:yellow)[Lottie: Well I’ll keep you updated on my plan Alfred. Your horses are rather nice.]
+
+//I winked before I began to walk away. His horses could be useful but I’m not sure how helpful he could be during the heist.//
+
+
+
 :: Pay Bartender {"position":"625,250","size":"100,100"}
 //Both of those fellows seem like they could be what I need. I just need to pay my tab before I'm off to find more options. //
 
@@ -469,6 +523,29 @@ Wild Oceans West
 [[Play->Introduction]]
 
 
+:: Train Robbery {"position":"650,2400","size":"100,100"}
+(text-colour:yellow)[Lottie: Not in town.]
+
+//I clarified.//
+
+(text-colour:yellow)[Lottie: It might involve a train.] 
+//I could tell I was starting to convince him.//
+(text-colour:red)[Alfred: And if you are going to catch a train, you need a horse.]
+(text-colour:yellow)[Lottie: Exactly you understand. ]
+(text-colour:red)[Alfred: I might be able to do that.]
+//He emphasized his next word.//
+(text-colour:red)[Alfred: If that means I get a cut. ]
+(text-colour:cyan)[[[Next->Train Robbery 2]]]
+
+
+:: Train Robbery 2 {"position":"775,2400","size":"100,100"}
+(text-colour:red)[Alfred: Then you might have yourself a deal. ]
+(text-colour:yellow)[Lottie: Well Alfred if I determine I need a horse I know where to find you. ]
+
+//He tipped his hat and I did the same and went on my way. I'm feeling pretty good about my chances to pull this off. At least I got this hard headed man to be open to the idea. It might pay off to get a few horses.//
+
+
+
 :: Wait for the seamstress 1 {"position":"650,1550","size":"100,100"}
 (text-colour:yellow)[''Lottie'': …]
 (text-colour:purple)[''Martinez'': …]
@@ -483,3 +560,7 @@ Wild Oceans West
 //This is awkward. I didn't really plan on all this waiting around.//
 
 (text-colour:cyan)[[[Give Up ->Wait for the seamstress 2]]] | (text-colour:cyan)[[[Keep Poking ->Keep Poking 2]]]
+
+
+:: Walking to Ranch {"position":"300,2300","size":"100,100"}
+[[Next->Meeting Alfred 1]]
