@@ -265,7 +265,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[Give her the needle back  ->Give her the needle back 1]]] | (text-colour:cyan)[[[ Do absolutely nothing -> Do absolutely nothing 1]]]
 
 
-:: Meeting Alfred 1 {"position":"425,2875","size":"100,100"}
+:: Meeting Alfred 1 {"position":"425,2750","size":"100,100"}
 //A man in his late fifties was sitting on the porch in a rocking chair. I almost didn’t want to bother him. He seemed very content with his eyes closed feeling the sun on his skin. I was hoping he was the ranch owner cause I’m just going to assume half of the people in this town don’t have a horse. Having a horse might be helpful if trying to catch a train.//
 
 (text-colour:yellow)[Lottie: ‘Scuse me? Do you know where I can find the owner?]
@@ -278,7 +278,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Next->Meeting Alfred 2]]
 
 
-:: Meeting Alfred 2 {"position":"525,2875","size":"100,100"}
+:: Meeting Alfred 2 {"position":"525,2750","size":"100,100"}
 (text-colour:red)[???: I’m tired of outlaws coming around here looking for trouble. So if you’re one of them might as well get off my porch now.]
 (text-colour:yellow)[Lottie: I’m not here to cause trouble.] 
 
@@ -488,7 +488,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[ Next->Meeting Eleanor 1]]]
 
 
-:: Out of Town {"position":"650,2875","size":"100,100"}
+:: Out of Town {"position":"650,2750","size":"100,100"}
 (text-colour:yellow)[Lottie: Not in town a few ways away. That’s why I’m inquiring about some horses. Mister?]
 (text-colour:red)[Alfred: You can call me Alfred, Miss Lottie.] 
 //He said my name almost in a condescending way. He still didn’t trust me.//
@@ -499,7 +499,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Next->Out of Town 2]]
 
 
-:: Out of Town 2 {"position":"775,2875","size":"100,100"}
+:: Out of Town 2 {"position":"775,2750","size":"100,100"}
 (text-colour:red)[Alfred: I had some wild days in my past. But I’m not sure how much I could offer now given my aged body.]
 (text-colour:yellow)[Lottie: Well I’ll keep you updated on my plan Alfred. Your horses are rather nice.]
 
@@ -520,6 +520,25 @@ The town was similar to others I've spent time in. Before I get too into plannin
 //At least I knew where I was going next.//
 
 [[Head to meet the seamstress ->Meeting Timmy 1]]
+
+
+:: Pick your group 1 {"position":"300,2975","size":"100,100"}
+Pick your group!
+
+(checkbox: bind _nelly, "Nelly Collins")
+(checkbox: bind _eugene, "Eugene Serpent Bell")
+(checkbox: bind _eleanor, "Eleanor Martinez")
+(checkbox: bind _timmy, "Timmy Coolguy")
+(checkbox: bind _alfred, "Alfred Bay")
+(set: $nelly to 0)(set: $eugene to 0)(set: $eleanor to 0)(set: $alfred to 0)(set: $timmy to 0)
+(link-rerun: "Recruit and Heist!") [
+(set: $totalMoney to 0)
+(if: _nelly)[(set: $nelly to 500000) (set: $totalMoney to $totalMoney + $nelly)](if: _eugene)[(set: $eugene to 450000) (set: $totalMoney to $totalMoney + $eugene)](if: _eleanor)[(set: $eleanor to 300000) (set: $totalMoney to $totalMoney + $eleanor)](if: _alfred)[(set: $alfred to 120000) (set: $totalMoney to $totalMoney + $alfred)](if: _timmy)[(set: $timmy to 20) (set: $totalMoney to $totalMoney + $timmy)]
+
+(if: (_nelly or _eugene or _eleanor or _alfred or _timmy) is false)[ You must select at least one character!]
+(else:)[(set: $selectedCount to 0)(if: _nelly)[(set: $selectedCount to it + 1)](if: _eugene)[(set: $selectedCount to it + 1)](if: _eleanor)[(set: $selectedCount to it + 1)](if: _timmy)[(set: $selectedCount to it + 1)](if: _alfred)[(set: $selectedCount to it + 1)](if: $selectedCount is not 3)[You must select exactly three characters!](else:)[You stole $totalMoney]](set: $totalMoney to 0)(set: $selectedCount to 0)]
+
+
 
 
 :: Play along with him 1 {"position":"675,650","size":"100,100"}
@@ -614,7 +633,7 @@ Wild Oceans West
 [[Play->Introduction]]
 
 
-:: Train Robbery {"position":"650,2975","size":"100,100"}
+:: Train Robbery {"position":"650,2850","size":"100,100"}
 (text-colour:yellow)[Lottie: Not in town.]
 
 //I clarified.//
@@ -629,7 +648,7 @@ Wild Oceans West
 (text-colour:cyan)[[[Next->Train Robbery 2]]]
 
 
-:: Train Robbery 2 {"position":"775,2975","size":"100,100"}
+:: Train Robbery 2 {"position":"775,2850","size":"100,100"}
 (text-colour:red)[Alfred: Then you might have yourself a deal. ]
 (text-colour:yellow)[Lottie: Well Alfred if I determine I need a horse I know where to find you. ]
 
@@ -652,5 +671,5 @@ Wild Oceans West
 (text-colour:cyan)[[[Give Up ->Wait for the seamstress 2]]] | (text-colour:cyan)[[[Keep Poking ->Keep Poking 2]]]
 
 
-:: Walking to Ranch {"position":"300,2875","size":"100,100"}
+:: Walking to Ranch {"position":"300,2750","size":"100,100"}
 [[Next->Meeting Alfred 1]]
