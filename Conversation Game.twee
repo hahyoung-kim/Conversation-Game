@@ -12,7 +12,83 @@ Conversation Game
 }
 
 
-:: \ Ask about her past directly 1 {"position":"900,2050","size":"100,100"}
+:: \ \ Compliment her skills 1 {"position":"575,2300","size":"100,100"}
+(text-colour:yellow)[''Lottie'': This place belongs to Mistress Lawrence, right? With your skill, is there a reason you’re not somewhere else, running your own shop? I can see you in a big city, taking order after order, delivering finished pieces that leave your customers raving. ]
+(text-colour:purple)[''Eleanor'': Thank you. It is my dream to one day do that.  ]
+(text-colour:yellow)[''Lottie'': Oh? You have goals I see. Beautiful and grand goals fit for a beautiful and grand woman such as yourself. ]
+// Eleanor doesn’t blush, but she does fumble with her tools for a moment, looking slightly taken aback. //
+
+(text-colour:cyan)[[[  Next ->  Compliment her skills 2]]]
+
+
+:: \ \ Compliment her skills 2 {"position":"575,2425","size":"100,100"}
+(text-colour:purple)[''Eleanor'':  Ah- thank you. I enjoy wearing and making pretty things. Are you looking to buy a new dress? I have the most beautiful patterned cowhide skirt that would go wonderfully with your shoes. If you want to buy a new jacket, I have a skirt and jacket set with a frilly blouse to go along with it? I think you would look good in blue. If you want something patterned, I have patterns, or if you prefer solid colors, I have solid colors. If you can think it, I can make it. Please feel free to browse our dresses and pick something you like. ]
+(text-colour:yellow)[''Lottie'': //(That’s… the most I’ve heard Eleanor speak this entire time! I guess I know how I can get through to her now. If I can just play to her dreams, I can probably get her to join my team.)//]
+
+(text-colour:cyan)[[[ Ask her to join your team -> Ask her to join your team 1]]] | (text-colour:cyan)[[[ Don’t say anything -> Don’t say anything  1]]]
+
+
+:: \ Ask her to join your team 1 {"position":"512.5,2550","size":"100,100"}
+
+
+
+:: \ Ask if she was an outlaw 1 {"position":"900,2300","size":"100,100"}
+(text-colour:yellow)[''Lottie'': Would that family trade have anything to do with outlawing, perhaps? ]
+(text-colour:yellow)[''Lottie'': //(Oh yikes, that’s a scary face. She’s a dangerous woman, for sure. I really want her on my team now.)// ]
+(text-colour:purple)[''Eleanor'': So? If it was? I left my family years ago. They have nothing to do with me. I am just a seamstress. I work for a living.  ]
+(text-colour:yellow)[''Lottie'':  Is it hard? ]
+(text-colour:purple)[''Eleanor'':  Is what hard? ]
+(text-colour:yellow)[''Lottie'':  Working… Us wild folks don’t take too well to settling down. ]
+(text-colour:purple)[''Eleanor'':   I… No. I am perfectly happy where I am right now. ]
+
+(text-colour:cyan)[[[ Drop the subject  -> Drop the subject 1]]] | (text-colour:cyan)[[[ Ask what it would take for her to join you -> Ask what it would take for her to join you 1]]]
+
+
+:: \ Ask what it would take for her to join you 1 {"position":"962.5,2425","size":"100,100"}
+(text-colour:yellow)[''Lottie'': Eleanor, I can tell when a girl has dreams. That look in your eyes right now? That’s the same look I get when I start thinking about my own goals. I wanna make your dreams happen. So what’ll it take, hm?]
+(text-colour:purple)[''Eleanor'':  I do not understand why you want to help me, but if you want to know… Money. I need money to buy a shop in a big city far away from here.  ]
+(text-colour:yellow)[''Lottie'': And that’s exactly what I want to offer you. A proposition, if you will, for you to help me and leave with more money than you’ll know what to do with. And all you need to do is use those amazingly quick fingers of yours to ahh, lets see… pick a few locks, maybe? ]
+(text-colour:purple)[''Eleanor'': (mumbling to herself) Ella es tan irritante. Por qué tengo que…]
+(text-colour:purple)[''Eleanor'':  Madam, I do not-.]
+
+(text-colour:cyan)[[[ Next -> Ask what it would take for her to join you 2]]]
+
+
+
+:: \ Ask what it would take for her to join you 2 {"position":"962.5,2550","size":"100,100"}
+(text-colour:yellow)[''Lottie'':  I know, I know, you don’t hurt people. Good thing you won’t be hurting anyone, huh? Look. It’s just a heist. If you decide to join me, come the day after tomorrow you’ll have the money you want to start that shop you want so badly.]
+
+// Eleanor quickly wipes a longing look on her face. //
+
+(text-colour:yellow)[''Lottie'': Tomorrow night, meet me [LOCATION]. I’ll be waiting for you. If I don’t see you, I’ll assume you don’t want anything to do with what I have planned..]
+(text-colour:purple)[''Eleanor'': ...]
+(text-colour:yellow)[''Lottie'': That’s all, I guess. I hope I’ll see you again. Farewell for now, dear seamstress.]
+
+
+:: \ Do absolutely nothing 1 {"position":"900,2050","size":"100,100"}
+(text-colour:purple)[''Eleanor'': … ]
+(text-colour:yellow)[''Lottie'': ... ]
+(text-colour:purple)[''Eleanor'': If you have nothing better to do, please leave madam. You are distracting me, and I have other work to do.]
+
+
+
+:: \ Don’t say anything  1 {"position":"637.5,2550","size":"100,100"}
+
+
+
+:: \ Drop the subject 1 {"position":"837.5,2425","size":"100,100"}
+(text-colour:yellow)[''Lottie'': …Alright if you say so. ]
+
+//(An uncomfortable silence descends upon the shop. Eleanor stiffly resumes her stitching.)//
+
+(text-colour:yellow)[''Lottie'': How long should I wait until you can start fixing my skirt? ]
+(text-colour:purple)[''Eleanor'': I don’t know. I have other orders to complete. It might have to be tomorrow.]
+(text-colour:yellow)[''Lottie'': // (I don’t really want to wait that long. I guess I’ll be fine with a rip. It’s barely noticeable anyways. Although, I feel like if I leave now, I won’t be able to get her on my team…) // ]
+
+(text-colour:cyan)[[[ Leave the shop anyways -> Leave the shop anyways 1]]] | (text-colour:cyan)[[[ Watch her work for a while -> Watch her work for a while 1]]]
+
+
+:: \ Leave the shop anyways 1 {"position":"837.5,2550","size":"100,100"}
 
 
 
@@ -24,11 +100,31 @@ Conversation Game
 
 
 :: \ She’s lying 1 {"position":"900,2175","size":"100,100"}
+(text-colour:yellow)[''Lottie'': Mmm, somehow I don’t think that’s true. People without histories don’t just throw sharp objects at others. Now, I fully believe that you wouldn’t hurt a fly, but I’m just curious, y’know? ]
+(text-colour:yellow)[''Lottie'': //(Yikes, she’s glaring at me again.)// ]
+(text-colour:purple)[''Eleanor'': That is not your business to know.  ]
+(text-colour:yellow)[''Lottie'': Ah, if you’re feeling a bit shy, no need to worry. I have a history of my own. Almost got caught by a few sheriffs, if you know what I mean. ]
+
+//Eleanor relaxes at what was almost Lottie’s confession to being an outlaw.//
+
+(text-colour:purple)[''Eleanor'':  I… learned it from the family trade. That is all. ]
+
+(text-colour:cyan)[[[ Ask if she was an outlaw  -> Ask if she was an outlaw 1]]] | (text-colour:cyan)[[[ Watch her work for a while -> Watch her work for a while 1]]]
+
+
+:: \ Wait for her to finish 1 {"position":"450,2300","size":"100,100"}
 
 
 
-:: \ Watch her work for a while 1 {"position":"775,2175","size":"100,100"}
+:: \ Watch her work for a while 1 {"position":"600,2175","size":"100,100"}
+(text-colour:yellow)[''Lottie'': // (Sigh. I don’t want to push her too hard. She might clam up and not tell me anything at all.)// Alright. You said you were busy, right? I have a rip I need stitched up, but I can wait. ]
+// Eleanor nods with gratitude, resuming her previous stitching on the dress she dropped, which upon closer inspection, is actually a corset that she is in the process of boning.//
+(text-colour:yellow)[''Lottie'': //  (Oh she’s quick with her hands. I bet she could work lockpicks like no problem.)// ]
+// Eleanor finishes her work quickly and efficiently, betraying years of experience with small tools. //
+(text-colour:purple)[''Eleanor'': Thank you for waiting, Miss? ]
+(text-colour:yellow)[''Lottie'':  Lottie. Lottie Burnham. And it’s no problem. I enjoyed watching you work. It’s very calming. ]
 
+(text-colour:cyan)[[[ Wait for her to finish  -> Wait for her to finish 1]]] | (text-colour:cyan)[[[  Compliment her skills ->  Compliment her skills 1]]]
 
 
 :: Be mean to the boy 1 {"position":"750,525","size":"100,100"}
@@ -166,10 +262,10 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:purple)[''Martinez'': …Eleanor. My name is Eleanor Martinez.]
 (text-colour:yellow)[''Lottie'': //(I’ll bet she’s regretting throwing this needle at me. She’s definitely not as good of a shot as Nellie, but she’s got a history and I absolutely want to know what it is. Maybe I can even ask her to join my little team of heisters.)//]
 
-(text-colour:cyan)[[[Give her the needle back  ->Give her the needle back 1]]] | (text-colour:cyan)[[[ Ask about her past directly -> Ask about her past directly 1]]]
+(text-colour:cyan)[[[Give her the needle back  ->Give her the needle back 1]]] | (text-colour:cyan)[[[ Do absolutely nothing -> Do absolutely nothing 1]]]
 
 
-:: Meeting Alfred 1 {"position":"425,2300","size":"100,100"}
+:: Meeting Alfred 1 {"position":"425,2875","size":"100,100"}
 //A man in his late fifties was sitting on the porch in a rocking chair. I almost didn’t want to bother him. He seemed very content with his eyes closed feeling the sun on his skin. I was hoping he was the ranch owner cause I’m just going to assume half of the people in this town don’t have a horse. Having a horse might be helpful if trying to catch a train.//
 
 (text-colour:yellow)[Lottie: ‘Scuse me? Do you know where I can find the owner?]
@@ -182,9 +278,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Next->Meeting Alfred 2]]
 
 
-
-
-:: Meeting Alfred 2 {"position":"525,2300","size":"100,100"}
+:: Meeting Alfred 2 {"position":"525,2875","size":"100,100"}
 (text-colour:red)[???: I’m tired of outlaws coming around here looking for trouble. So if you’re one of them might as well get off my porch now.]
 (text-colour:yellow)[Lottie: I’m not here to cause trouble.] 
 
@@ -201,7 +295,6 @@ The town was similar to others I've spent time in. Before I get too into plannin
 //He spoke like it was a question.//
 
 (text-colour:cyan)[[[Tell him the trouble is out of town.->Out of Town]] |[[ Tell him that it is a train robbery.->Train Robbery]]]
-
 
 
 :: Meeting Eleanor 1 {"position":"650,1300","size":"100,100"}
@@ -395,7 +488,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (text-colour:cyan)[[[ Next->Meeting Eleanor 1]]]
 
 
-:: Out of Town {"position":"650,2300","size":"100,100"}
+:: Out of Town {"position":"650,2875","size":"100,100"}
 (text-colour:yellow)[Lottie: Not in town a few ways away. That’s why I’m inquiring about some horses. Mister?]
 (text-colour:red)[Alfred: You can call me Alfred, Miss Lottie.] 
 //He said my name almost in a condescending way. He still didn’t trust me.//
@@ -406,13 +499,11 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Next->Out of Town 2]]
 
 
-
-:: Out of Town 2 {"position":"775,2300","size":"100,100"}
+:: Out of Town 2 {"position":"775,2875","size":"100,100"}
 (text-colour:red)[Alfred: I had some wild days in my past. But I’m not sure how much I could offer now given my aged body.]
 (text-colour:yellow)[Lottie: Well I’ll keep you updated on my plan Alfred. Your horses are rather nice.]
 
 //I winked before I began to walk away. His horses could be useful but I’m not sure how helpful he could be during the heist.//
-
 
 
 :: Pay Bartender {"position":"625,250","size":"100,100"}
@@ -523,7 +614,7 @@ Wild Oceans West
 [[Play->Introduction]]
 
 
-:: Train Robbery {"position":"650,2400","size":"100,100"}
+:: Train Robbery {"position":"650,2975","size":"100,100"}
 (text-colour:yellow)[Lottie: Not in town.]
 
 //I clarified.//
@@ -538,12 +629,11 @@ Wild Oceans West
 (text-colour:cyan)[[[Next->Train Robbery 2]]]
 
 
-:: Train Robbery 2 {"position":"775,2400","size":"100,100"}
+:: Train Robbery 2 {"position":"775,2975","size":"100,100"}
 (text-colour:red)[Alfred: Then you might have yourself a deal. ]
 (text-colour:yellow)[Lottie: Well Alfred if I determine I need a horse I know where to find you. ]
 
 //He tipped his hat and I did the same and went on my way. I'm feeling pretty good about my chances to pull this off. At least I got this hard headed man to be open to the idea. It might pay off to get a few horses.//
-
 
 
 :: Wait for the seamstress 1 {"position":"650,1550","size":"100,100"}
@@ -562,5 +652,5 @@ Wild Oceans West
 (text-colour:cyan)[[[Give Up ->Wait for the seamstress 2]]] | (text-colour:cyan)[[[Keep Poking ->Keep Poking 2]]]
 
 
-:: Walking to Ranch {"position":"300,2300","size":"100,100"}
+:: Walking to Ranch {"position":"300,2875","size":"100,100"}
 [[Next->Meeting Alfred 1]]
