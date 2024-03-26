@@ -133,30 +133,45 @@ Conversation Game
 
 :: Be mean to the boy 1 {"position":"750,525","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': I was standing still, kid. You’re the one who ran into me.]
-//(I watch as the boy picks himself up and dusts his pants off.//
-(text-colour:orange)[''???:''//grumbling to himself// Urghh, miss, you’re kinda mean aren’t you.]
+
+//I watch as the boy picks himself up and dusts his pants off.//
+
+(text-colour:orange)[''???:'' //(grumbling to himself)//  Urghh, miss, you’re kinda mean aren’t you.]
+
 (text-colour:#b45d3f)[''Lottie'': Well, if you’re just gonna accuse me of things I didn’t do, I’ll be on my way. ]
-(text-colour:orange)[''???:''WAIT! Hold on! I know your secret! And if you don’t say sorry to me, I’m gonna tell the whole town about it!]
+
+(text-colour:orange)[''???:'' WAIT! Hold on! I know your secret! And if you don’t say sorry to me, I’m gonna tell the whole town about it!]
+
 //The boy’s shout is so loud that it attracts the attention of a few passersby. I hesitate. I'm not sure what secret the boy is referring to, but preparing for a heist requires secrecy and the boy is drawing a lot of stares.//
-(text-colour:#b45d3f)[''Lottie'': Hey, hey, hey. Here, have a sweet. Be quiet, be quiet now. ]
+
+(text-colour:#b45d3f)[''Lottie'': Oh hell- Hey, hey, hey. Here, have a sweet. Be quiet, be quiet now. ]
+
 //I hurriedly shove a candy into the boy’s hand while picking up the boy’s spilled groceries. I then rush us both to an alley between two buildings where people are less likely to overhear us.//
+
 [[Next->Be mean to the boy 2]]
 
 
 :: Be mean to the boy 2 {"position":"875,650","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': Man… What a day… Alright kid. I’ll bite. What’s this secret you’re going on about?]
-(text-colour:orange)[''???:''‘M not a kid! My name’s Timmy Coolguy. I’m an outlaw, just like you! I heard you talking about a heist earlier while I was sneaking around, doing outlaw things.]
+
+(text-colour:orange)[''???:'' ‘M not a kid! My name’s Timmy Coolguy. I’m an outlaw, just like you! I heard you talking about a heist earlier while I was sneaking around, doing outlaw things.]
 
 [[Deny it->Deny it 3]] | [[Don't Deny->Don't Deny 1]]
 
 
 :: Deny it 1 {"position":"550,650","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': Ah, Timmy, I hate to break it to you, but you got the wrong gal. Either way, hearing someone planning a heist is serious business and you should’ve told the sheriff about it.]
+
 //Timmy looks taken aback.//
-(text-colour:orange)[''Timmy:''O-oh … Huh? But I was so sure that you…]
+
+(text-colour:orange)[''Timmy:'' O-oh … Huh? But I was so sure that you…]
+
 (text-colour:#b45d3f)[''Lottie'': Actually, now that I think about it, if the outlaws ever heard that you were the one who sold them out, they might end up trying to get you. So you just keep your mouth shut, and I’ll go tell the sheriff. ]
+
 //The more I talk, the more distraught Timmy begins to look.//
-(text-colour:orange)[''Timmy:''Wait! No, don’t- I- I mean- ]
+
+(text-colour:orange)[''Timmy:'' Wait! No, don’t- I- I mean- ]
+
 //In his desperation, Timmy grabs the edge of my sleeve. I pause and look down at him. Suddenly, Timmy drops my sleeve, looking panicked. Seeing the young child look so despaired, I start to feel a little bad for him.//
 
 [[Next->Deny it 2]]
@@ -164,27 +179,38 @@ Conversation Game
 
 :: Deny it 2 {"position":"550,775","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': Well… Was there a reason you didn’t report the outlaws to the sheriff?.]
+
 //Timmy stares up at me with wide eyes for a moment before crossing his arms and looking away petulantly.//
-(text-colour:orange)[''Timmy:''Hmph, not gonna tell you. You’re just gonna go to the sheriff about it.]
+
+(text-colour:orange)[''Timmy:'' Hmph, 'm not gonna tell you. You’re just gonna tattle to the sheriff about it.]
 
 [[Reveal that you’re an outlaw->Reveal that you’re an outlaw 1]] |[[Drop the subject and leave->Drop the subject and leave 1]]
 
 
 :: Deny it 3 {"position":"875,775","size":"100,100"}
 //I hold up my hand.//
+
 (text-colour:#b45d3f)[''Lottie'': First off. I’m not an outlaw. Second, you’re a child. You’re not an outlaw.]
-(text-colour:orange)[''Timmy:''//He starts eating the candy// Ugh. This candy is too sweet for me to be mad.]
-//Timmy speaks loudly//
-(text-colour:orange)[''Timmy:''Miss, I heard you and that other Miss at the darts talking about a popper- no wait, poppy… um, a, uh, popper-stition. ]
+
+(text-colour:orange)[''Timmy:'' //(Talking through a mouthful of candy)//  This candy is too sweet for me to be mad.]
+
+//Timmy speaks loudly.//
+
+(text-colour:orange)[''Timmy:'' Miss, I heard you and that other Miss at the darts talking about a popper- no wait, poppy… um, a, uh, popper-stition. ]
+
 (text-colour:#b45d3f)[''Lottie'':  … A proposition.]
-(text-colour:orange)[''Timmy:''Yeah, that!]
-//I don’t think I can convince him otherwise, if he’s overhead me and Nellie talking.//
-(text-colour:orange)[''Timmy:''Oh please, miss outlaw, let me join you! I’ll do whatever you need me to do! I’m small and can be loud if I want to. I just want some money for my ma, miss.]
 
-[[Deny it->Deny it 4]]
+(text-colour:orange)[''Timmy:'' Yeah, that!]
 
 
-:: Deny it 4 {"position":"925,900","size":"100,100"}
+[[Next->Deny it 4]]
+
+
+:: Deny it 4 {"position":"900,900","size":"100,100"}
+//I don’t think I can convince him otherwise, if he’s overhead me and Nellie talking. He probably won't stop bugging me until I say yes...//
+
+(text-colour:orange)[''Timmy:'' Oh please, miss outlaw, let me join you! I’ll do whatever you need me to do! I’m small and can be loud if I want to. I just want some money for my ma.]
+
 //For his mother… I kinda get that. I know I got my roots in outlaw-ing when I was small like him, but I don’t know if I want to be the one bringing a kid into the outlaw business.//
 
 [[Offer him a possibility to be on the team->Offer him a possibility to be on the team 1]] | [[Refuse his request->Refuse his request 1]]
@@ -192,7 +218,9 @@ Conversation Game
 
 :: Don't Deny 1 {"position":"1000,775","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': Haha, you caught me, kid. I’m an outlaw planning a heist. What are you gonna do now?]
-(text-colour:orange)[''Timmy:''Oh please, miss outlaw, let me join you! I’ll do whatever you need me to do! I’m small and can be loud if I want to. I just want some money for my ma, miss.]
+
+(text-colour:orange)[''Timmy:'' Oh please, miss outlaw, let me join you! I’ll do whatever you need me to do! I’m small and can be loud if I want to. I just want some money for my ma, miss.]
+
 //For his mother… I kinda get that. I know I got my roots in outlaw-ing when I was small like him, but I don’t know if I want to be the one bringing a kid into the outlaw business.//
 
 [[Offer him a possibility to be on the team->Offer him a possibility to be on the team 1]] | [[Refuse his request->Refuse his request 1]]
@@ -200,9 +228,12 @@ Conversation Game
 
 :: Drop the subject and leave 1 {"position":"625,900","size":"100,100"}
 //I sigh and shake my head//
+
 (text-colour:#b45d3f)[''Lottie'': Aw, kid, I was just joking about the sheriff thing. We wouldn’t want any bulls running around when we pull a heist, would we?]
 
-//Gosh, kids really are stubborn huh. He must really look up to us outlaws. But still, I can’t risk any kids runnin’ their mouths off to anyone… I’d best be off to the seamstress to get this rip stitched up. I still don't know where the seamtress is. I guess I'll just head wherever my feet take me and hope it lands me where I need to be. I left Timmy behind as he begins to pick up his groceries off the ground. He stares angrily at his feet for a moment before shaking his head and slowly trudging towards what I assume is the town seamstress.//
+//Gosh, kids really are stubborn huh. He must really look up to us outlaws. But still, I can’t risk any kids runnin’ their mouths off to anyone… I’d best be off to the seamstress to get this rip stitched up. I still don't know exactly where the seamtress is. Eugene said it was just down the road, but...
+
+I guess I'll just head wherever my feet take me and hope it lands me where I need to be. I left Timmy behind as he begins to pick up his groceries off the ground. He stares angrily at his feet for a moment before shaking his head and slowly trudging towards what I assume is the town seamstress.//
 
 [[ Next->Meeting Eleanor 3]]
 
@@ -232,13 +263,17 @@ Conversation Game
 
 
 :: Help the boy up 1 {"position":"625,525","size":"100,100"}
-//I sighed and bent down to help the boy organize his stuff. After stacking all of the cans, I helped the boy up.//
+//I sighed and bent down to help the boy organize his stuff. After stacking all of the cans he dropped, I helped the boy up.//
+
 (text-colour:#b45d3f)[''Lottie'':  My bad, kid. Where were you headed off to with all this stuff anyways?]
-(text-colour:orange)[''???:''Oh! I was running an errand for the town seamstress. Wait, no! Don’t call me kid! My name is Timmy. Timmy Coolguy. I’m the best errand runner around, and I’m also an outlaw in training!]
+
+(text-colour:orange)[''???:' 'Oh! I was running an errand for the town seamstress. Wait, no! Don’t call me kid! My name is Timmy. Timmy Coolguy. I’m the best errand runner around, and I’m also an outlaw in training!]
+
 (text-colour:#b45d3f)[''Lottie'':  Right… Hey, Timmy? Usually outlaws don’t go around yelling that they’re outlaws for all the world to hear. ]
 
 //Timmy makes a small noise of realization. He then proceeded to shiftily look around and loudly whisper.//
-(text-colour:orange)[''Timmy:''I know that! You’re different, though. Y’see, I heard you talkin’ earlier. About a heist! ]
+
+(text-colour:orange)[''Timmy:'' I know that! You’re different, though. Y’see, I heard you talkin’ earlier. About a heist! ]
 
 [[Deny it->Deny it 1]] |[[Play along with him->Play along with him 1]]
 
@@ -313,21 +348,25 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Tell him the trouble is out of town.->Out of Town]] |[[ Tell him that it is a train robbery.->Train Robbery]]
 
 
-:: Meeting Eleanor 1 {"position":"650,1300","size":"100,100"}
+:: Meeting Eleanor 1 {"position":"625,1225","size":"100,100"}
 //Timmy bursts into the seamstress’s shop with a loud greeting.//
 
 (text-colour:orange)[''Timmy'': Hi Miss Lawrence! Hi Miss Martinez! I got your things for you!]
-//I looked around the shop. It’s small and stuffed full of dresses and suits in various states of completion. A lone woman sits behind the counter, tucked away behind a rather impressively large stack of spools of thread and fabrics. She glances up when Timmy speaks but otherwise makes no sound or movement.//
+
+//I look around the shop. It’s small and stuffed full of dresses and suits in various states of completion. A lone woman sits behind the counter, tucked away behind a rather impressively large stack of spools of thread and fabrics. She glances up when Timmy speaks but otherwise makes no sound or movement.//
 
 //Timmy turns towards me.//
+
 (text-colour:orange)[''Timmy'': Oh! It looks like Miss Lawrence is out for today. Hm, that’s alright. Don’t tell anyone I said this, but Miss Martinez is way better at fixing clothes than Miss Lawrence.]
-//At Timmy's statement, the quiet Miss Martinez lets out a soft snort.//
+
+//At Timmy's statement, the quiet Miss Martinez lets out a soft chuckle.//
+
 (text-colour:orange)[''Timmy'': Hehe, Miss Martinez, I put your things under the table, okay? Bye bye!]
 
 [[ Next->Meeting Eleanor 2]]
 
 
-:: Meeting Eleanor 2 {"position":"650,1425","size":"100,100"}
+:: Meeting Eleanor 2 {"position":"575,1375","size":"100,100"}
 //Guess I should talk to the seamstress.//
 (text-colour:#b45d3f)[''Lottie'': ‘Scuse me?]
 (text-colour:purple)[''Martinez'': …]
@@ -340,12 +379,25 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Wait for the seamstress  ->Wait for the seamstress 1]] | [[Poke around the store->Poke around the store 1]] | [[ Mention Timmy->Mention Timmy 1]]
 
 
-:: Meeting Eleanor 3 {"position":"775,1300","size":"100,100"}
+:: Meeting Eleanor 3 {"position":"825,1300","size":"100,100"}
 //I managed to find the seamstress after a few minutes of walking. As I enter the store, Timmy, the boy who had bumped into me earlier runs out of the store. I definitely could’ve saved a bit of my time if I’d asked the kid for directions. Oh well, I’m here now.//
 
-//I looked around the shop. It’s small and stuffed full of dresses and suits in various states of completion. A lone woman sits behind the counter, tucked away behind a rather impressively large stack of spools of thread and fabrics. She glances up when Timmy speaks but otherwise makes no sound or movement.//
+//I looked around the shop. It’s small and stuffed full of dresses and suits in various states of completion. A lone woman sits behind the counter, tucked away behind a rather impressively large stack of spools of thread and fabrics. She glances up when I enter but otherwise makes no sound or movement.//
 
-[[Next ->Meeting Eleanor 2]]
+[[Next ->Meeting Eleanor 4]]
+
+
+:: Meeting Eleanor 4 {"position":"975,1400","size":"100,100"}
+//Guess there's nothing else to do but talk..//
+(text-colour:#b45d3f)[''Lottie'': ‘Scuse me?]
+(text-colour:purple)[''Martinez'': …]
+//Must not be one for words.//
+(text-colour:#b45d3f)[''Lottie'': Hey there, I got a rip in my skirt and I’m looking to get it fixed.]
+(text-colour:purple)[''Martinez'': I am busy right now. Please wait.]
+//She’s not even bothering to look at me!//
+
+
+[[Wait for the seamstress  ->Wait for the seamstress 1]] | [[Poke around the store->Poke around the store 1]]
 
 
 :: Meeting Eugene 1 {"position":"625,125","size":"100,100"}
@@ -455,22 +507,28 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 :: Meeting Timmy 1 {"position":"625,400","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'':  …Almost noon, huh. It’s getting kinda warm ‘round here.]
+
 //I sighed and shaded my eyes from the sun with my hand. Before I could get moving toward the seamstress, something slamed into the side of my leg.//
-(text-colour:orange)[''???:''Ouch!]
-(text-colour:#b45d3f)[''Lottie'': What the… A kid? ]
+
+(text-colour:orange)[''???:'' Ouch!]
+
 //I looked down at the little boy who has been thrown onto the ground near my feet. He is surrounded by a few scattered tin cans and a bag of flour from the general store. As I looked down at him, I notices that my skirt has a rip in it. Ugh this kid, I'll make a note to go to the seamstress to mend her skirt.//
-(text-colour:orange)[''???:'' I’m not a kid! I know I’m kinda short, but you shoulda been watching where you were goin’, miss! ]
+
 
 [[Next->Meeting Timmy 2]]
 
 
 :: Meeting Timmy 2 {"position":"750,400","size":"100,100"}
-(text-colour:#b45d3f)[//This kid… Is he the one that tore my skirt? He looks kinda pitiful, sitting on the ground like that.//]
+(text-colour:#b45d3f)[''Lottie'': What the… A kid? ]
+
+(text-colour:orange)[''???:'' I’m not a kid! I know I’m kinda short, but you shoulda been watching where you were goin’, miss! ]
+
+(text-colour:#b45d3f)[//This kid… Was he the one that tore my skirt? He looks kinda pitiful, sitting on the ground like that.//]
 
 [[Help the boy up->Help the boy up 1]] | [[Be mean to the boy->Be mean to the boy 1]] | [[ Ignore the boy entirely->Meeting Eleanor 1]]
 
 
-:: Mention Timmy 1 {"position":"525,1550","size":"100,100"}
+:: Mention Timmy 1 {"position":"475,1550","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': So, Timmy runs errands for you sometimes?]
 (text-colour:purple)[''Martinez'': … Yes, he needs the money.]
 (text-colour:#b45d3f)[''Lottie'': How generous of you to help the little lad out.]
@@ -492,19 +550,27 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 
 :: Offer him a possibility to be on the team 1 {"position":"975,1025","size":"100,100"}
-//I sighed before I could agree.//
+//I sigh before I agree.//
+
 (text-colour:#b45d3f)[''Lottie'':  …Okay.]
-(text-colour:orange)[''Timmy:''Okay!!! Ah- wait no, is that an okay for me joining your heist?]
+
+(text-colour:orange)[''Timmy:'' Okay!!! Ah- wait no, is that an okay for me joining your heist?]
+
 (text-colour:#b45d3f)[''Lottie'': It’s an okay for you to join my heist, Timmy. Like you said, you’re small and can cause a scene if you want to. I mean, I had to move us to an alley ‘cause you were too attention grabbing. That, to me, seems like perfect decoy material.]
-(text-colour:orange)[''Timmy:''Oh, Miss! Thank you so much! I won’t let you down!]
-(text-colour:#b45d3f)[''Lottie'': Yeah, I’m counting on it, kid. Go take those groceries back to your mother and get a good night’s sleep. Meet me tomorrow night, alright?]
-(text-colour:orange)[''Timmy:''Yes, ma’am! These are actually for the town seamstress, so I can’t go back home just yet.]
+
+(text-colour:orange)[''Timmy:'' //(Gasping in astonishment)// A decoy... Oh, Miss! Thank you so much! I won’t let you down!]
+
+(text-colour:#b45d3f)[''Lottie'': Yeah, I’m counting on it, kid. Go take those groceries back to your mother and get a good night’s sleep.]
+
 
 [[Next->Offer him a possibility to be on the team 2]]
 
 
-:: Offer him a possibility to be on the team 2 {"position":"975,1150","size":"100,100"}
+:: Offer him a possibility to be on the team 2 {"position":"1025,1200","size":"100,100"}
+(text-colour:orange)[''Timmy:'' Yes, ma’am! These are actually for the town seamstress, so I can’t go back home just yet.]
+
 (text-colour:#b45d3f)[''Lottie'': The seamstress? Hm, well someone happened to rip a hole in my skirt, so I need to be heading to the seamstress, myself. Will you take me there, Timmy?]
+
 //Timmy nods sheepishly, recognizing that he was the one who tore my skirt. Together, Timmy and I start walking toward the seamstress’ shop)//
 
 [[ Next->Meeting Eleanor 1]]
@@ -537,7 +603,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 //He winked and smirked. I paid what I owed.//
 
-(text-colour:#b45d3f)[''Lottie'': And where can I find this seamstress.]
+(text-colour:#b45d3f)[''Lottie'': And where can I find this seamstress?]
 
 ''Bartender'': Just down the road you won't miss her shop. 
 
@@ -587,7 +653,7 @@ Pick your group!
 (else:)[(set: $selectedCount to 0)(if: _nelly)[(set: $selectedCount to it + 1)](if: _eugene)[(set: $selectedCount to it + 1)](if: _eleanor)[(set: $selectedCount to it + 1)](if: _timmy)[(set: $selectedCount to it + 1)](if: _alfred)[(set: $selectedCount to it + 1)](if: $selectedCount is not 3)[You must select exactly three characters!](else:)[You stole $totalMoney]](set: $totalMoney to 0)(set: $selectedCount to 0)]
 
 
-:: Pick your group 1 {"position":"425,2975","size":"100,100"}
+:: Pick your group 1 {"position":"400,2975","size":"100,100"}
 //I had Timmy round up the people I spoke to. His instructions were clear, tell them to meet me behind the saloon right after the sun sets. So here I am waiting for them to arrive. I decided I would only need three people in my crew to pull this off. I had to be very careful with my choice. Just one wrong step and that’s money gone.//
 
 Timmy: Miss! Miss! They’re coming! Well I think… I did tell them to come. 
@@ -597,7 +663,6 @@ Eugene: Kid sure knows how to annoy someone.
 Timmy: Hey! I’m not a kid!
 
 [[Next->Pick your group 2]]
-
 
 
 :: Pick your group 2 {"position":"550,2975","size":"100,100"}
@@ -631,36 +696,48 @@ Lottie: Right… Well I need a crew to rob a train. But I only need three of you
 [[Pick Your Team]]
 
 
-
 :: Play along with him 1 {"position":"675,650","size":"100,100"}
-//(Lottie starts for a moment before laughing casually. She pats Timmy on his head with a smile)//
+//I start for a moment before laughing casually. I pat Timmy on his head with a smile//
+
 (text-colour:#b45d3f)[''Lottie'': Timmy, you can’t just say stuff like that. I’m not like one of those outlaws you look up to-]
-(text-colour:orange)[''Timmy:''No!! I know it was you! I remember your face! ]
-//(Timmy proudly puffs his chest and puts his hands on his hips.)//
+
+(text-colour:orange)[''Timmy:'' No!! I know it was you! I remember your face! ]
+
+//Timmy proudly puffs his chest and puts his hands on his hips.//
+
 (text-colour:orange)[''Timmy:'' I have the best memory in this town. Ask me anything and I’ll remember it!]
-//(Lottie snorts in disbelief)//
+
+//I snort in disbelief.//
+
 (text-colour:#b45d3f)[''Lottie'': Okay then, Mr. Coolguy… Do you remember my name? If you can tell me, I’ll let you in on the heist. ]
-(text-colour:orange)[''Timmy:''Of course I remember! It’s- uhm.. It’s… Rebecca! Hah! I told you I remember everything. Your name is Rebecca!]
+
+(text-colour:orange)[''Timmy:'' Of course I remember! It’s- uhm.. It’s… Rebecca! Hah! I told you I remember everything. Your name is Rebecca!]
 
 [[Next->Play along with him 2]]
 
 
-:: Play along with him 2 {"position":"675,775","size":"100,100"}
+:: Play along with him 2 {"position":"750,775","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': So close… It’s Lottie, but I don’t blame you for getting it wrong, see? ‘Cause I never told you my name, Timmy.]
-(text-colour:orange)[''Timmy:''Wha- Hey! That’s not fair! ]
-//(I laugh and pat Timmy’s head again. He puffs up in anger and swats my hand off his head//
+
+(text-colour:orange)[''Timmy:'' Wha- Hey! That’s not fair! ]
+
+//I laugh and pat Timmy’s head again. He puffs up in anger and swats my hand off his head.//
+
 (text-colour:#b45d3f)[''Lottie'': Tell ya what, Timmy. You’re not a bad kid. Finish running your errands alright? I might just have a job for you come tomorrow night. ]
+
 //Timmy’s eyes start shining and he looks seconds away from jumping for joy.//
-(text-colour:orange)[''Timmy:'' Thank you so much, Miss Lottie! I won’t let you down!]
+
+(text-colour:orange)[''Timmy:'' Oh thank you so much, Miss Lottie! I won’t let you down!]
+
 (text-colour:#b45d3f)[''Lottie:'' I’m countin’ on it. Now somehow I’ve gotten a rip in my skirt and I need to head to the seamstress myself. Why don’t you show me where she’s at and you can finish up your errands?]
 
-[[Next->Play along with him 3]]
-
-
-:: Play along with him 3 {"position":"800,900","size":"100,100"}
 //Timmy is grinning from ear to ear. He nods eagerly before picking his groceries off the ground and running off in, presumably, the direction of the town seamstress. After a moment, I follow the excitable young child.//
 
-[[ Next->Meeting Eleanor 1]]
+[[Next->Meeting Eleanor 1]]
+
+
+:: Play along with him 3 {"position":"1200,875","size":"100,100"}
+
 
 
 :: Poke around the store 1 {"position":"775,1550","size":"100,100"}
@@ -676,25 +753,34 @@ Lottie: Right… Well I need a crew to rob a train. But I only need three of you
 
 //Timmy’s face falls. He dejectedly nods and grumbles a promise to secrecy. He stands awkwardly in front of me, before suddenly darting off presumably toward the seamstress.//
 
-//Guess I crushed his hopes right there. I probably should’ve asked him to show me where the seamstress is, but something tells me that he doesn’t want to see my face right now. I guess I'll just head wherever my feet take me and hope it lands me where I need to be.//
+//Guess I crushed his hopes right there. I probably should’ve asked him to show me where the seamstress is, but something tells me that he doesn’t want to see my face right now. 
+
+I still don't know exactly where the seamtress is. Eugene said it was just down the road, but... I guess I'll just head wherever my feet take me and hope it lands me where I need to be.//
 
 [[ Next->Meeting Eleanor 3]]
 
 
 :: Reveal that you’re an outlaw 1 {"position":"500,900","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': Aw, kid, I was just joking about the sheriff thing. We wouldn’t want any bulls running around when we pull a heist, would we?]
-(text-colour:orange)[''Timmy:''Bulls? Wait a minute- We?]
+
+(text-colour:orange)[''Timmy:'' Bulls? Wait a minute- We?]
+
 //I wink at Timmy.//
+
 (text-colour:#b45d3f)[''Lottie'': You said you were an outlaw in training right? Outlaw lesson number one: we don’t want any sheriffs catching on that we’re talking about them. So, we call ‘em bulls, got that?]
+
 //Timmy gapes at me for a moment, confused, before a smile tentatively grows on his face.//
-(text-colour:orange)[''Timmy:''You- Wait a minute… You really are an outlaw! I knew it! Oh please Miss Outlaw, please take me with you on your heist!]
-(text-colour:#b45d3f)[''Lottie'': Alright. Tomorrow night. Meet me behind the saloon. I might just want you on my team. ]
+
+(text-colour:orange)[''Timmy:'' You- Wait a minute… You really are an outlaw! I knew it! Oh please Miss Outlaw, please take me with you on your heist!]
+
+(text-colour:#b45d3f)[''Lottie'': Alrighty, kid. Tomorrow night. Meet me behind the saloon. I might just want you on my team. ]
 
 [[Next->Reveal that you’re an outlaw 2]]
 
 
 :: Reveal that you’re an outlaw 2 {"position":"500,1025","size":"100,100"}
 (text-colour:orange)[''Timmy:'' Thanks, Miss! I won’t let you down!]
+
 (text-colour:#b45d3f)[''Lottie'':  I’m countin’ on it. Now somehow I’ve gotten a rip in my skirt and I need to head to the seamstress myself. Why don’t you show me where she’s at and you can finish up your errands? ]
 
 //Timmy is grinning from ear to ear. He nods eagerly before picking his groceries off the ground and running off in, presumably, the direction of the town seamstress. After a moment, I follow the excitable young child.//
@@ -818,5 +904,3 @@ h1{
 tw-sidebar tw-icon {
   display: none;
 }
-
-
