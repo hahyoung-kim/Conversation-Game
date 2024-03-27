@@ -13,7 +13,7 @@ Conversation Game
 
 
 :: \ \ Compliment her skills 1 {"position":"550,2400","size":"100,100"}
-(text-colour:#b45d3f[''Lottie'': This place belongs to Mistress Lawrence, right? With your skill, is there a reason you’re not somewhere else, running your own shop? I can see you in a big city, taking order after order, delivering finished pieces that leave your customers raving. ]
+(text-colour:#b45d3f)[''Lottie'': This place belongs to Mistress Lawrence, right? With your skill, is there a reason you’re not somewhere else, running your own shop? I can see you in a big city, taking order after order, delivering finished pieces that leave your customers raving. ]
 (text-colour:purple)[''Eleanor'': Thank you. It is my dream to one day do that.  ]
 (text-colour:#b45d3f)[''Lottie'': Oh? You have goals I see. Beautiful and grand goals fit for a beautiful and grand woman such as yourself. ]
 // Eleanor doesn’t blush, but she does fumble with her tools for a moment, looking slightly taken aback. //
@@ -36,7 +36,7 @@ Conversation Game
 
 (text-colour:purple)[''Eleanor'': So? If it was? I left my family years ago. They have nothing to do with me. I am just a seamstress. I work for a living.  ]
 
-(text-colour:#b45d3f[''Lottie'':  Is it hard? ]
+(text-colour:#b45d3f)[''Lottie'':  Is it hard? ]
 
 (text-colour:purple)[''Eleanor'':  Is what hard? ]
 
@@ -100,11 +100,6 @@ Conversation Game
 [[Next -> Do nothing 2]]
 
 
-
-
-
-
-
 :: \ Do nothing 2 {"position":"1050,2275","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': If it was so easy to fix, why'd you ignore me for so long? I almost thought you weren't gonna talk to me at all.]
 
@@ -116,7 +111,7 @@ Conversation Game
 
 (text-colour:#b45d3f)[''Lottie'': //She probably can't do much without her needle. Hm, she's kinda shy isn't she? Most people would've just asked for the needle at this point.//]
 
-[[Give her the needle ->Give her the needle back 1]] 
+[[Give her the needle ->Give her the needle back 1]]
 
 
 :: \ Saloon 2 {"position":"425,200","size":"100,100"}
@@ -277,6 +272,15 @@ I guess I'll just head wherever my feet take me and hope it lands me where I nee
 (elseif: (count: (history:), "Pick Your Team") is 3)[[[Start the Heist]]]
 
 
+:: End {"position":"1625,3200","size":"100,100"}
+(set: $nelly to 0)(set: $eugene to 0)(set: $eleanor to 0)(set: $alfred to 0)(set: $timmy to 0)(set: $totalMoney to 0)(if: ((history:) contains "Nelly Collins"))[(set: $nelly to 500000)(set: $totalMoney to $totalMoney + $nelly)](if: ((history:) contains "Eugene Bell"))[(set: $eugene to 450000)(set: $totalMoney to $totalMoney + $eugene)](if: ((history:) contains "Timmy Coolguy"))[(set: $timmy to 20) (set: $totalMoney to $totalMoney + $timmy)](if: ((history:) contains "Eleanor Martinez"))[(set: $eleanor to 300000) (set: $totalMoney to $totalMoney + $eleanor)](if: ((history:) contains "Alfred Bray"))[(set: $alfred to 120000) (set: $totalMoney to $totalMoney + $alfred)]
+
+<h4>[After counting my share I made a total of $$totalMoney. I would say I'm contempt with that. Would I do this again that's question for another day.]<h4>
+
+[[Try Again ->Title Screen]]
+
+
+
 :: Eugene Bell {"position":"975,3075","size":"100,100"}
 (if: (count: (history:), "Pick Your Team") is 1)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 2)[[[Pick Your Team]]]
@@ -373,7 +377,7 @@ I guess I'll just head wherever my feet take me and hope it lands me where I nee
 [[Next->Heist 6]]
 
 
-:: Heist 6 {"position":"1775,3100","size":"100,100"}
+:: Heist 6 {"position":"1750,3100","size":"100,100"}
 //Huge stacks of money was waiting for us.//
 
 (text-colour:#b45d3f)[Lottie: I'm going to grab what I can and then y'all can toss me what you can grab. We should fill up the cart easily and go.]
@@ -392,8 +396,55 @@ I guess I'll just head wherever my feet take me and hope it lands me where I nee
 (text-colour:purple)[Eleanor: Don't mention it.]]
 (if: ((history:) contains "Alfred Bray"))[
 (text-colour:red)[Alfred: Don't drop the money.]
-(text-colour:#b45d3f)[Lottie: You worry too much.]
+(text-colour:#b45d3f)[Lottie: You worry too much.]]
+
+//I grabbed what I could then heading back out of the train.//
+
+[[Next->Heist 7]]
+
+
+:: Heist 7 {"position":"1425,3200","size":"100,100"}
+//I stared out of the train feeling the wind on my face. The train was still moving and there was my horse trying to keep up. The cart was bumping along. I was just happy it didn't fall off the reins. I tossed the money. I've never missed before and I didn't miss now. I whistled at Penny (my horse) to come closer. She's used to these kind of things. I steadied myself, grabbed onto her reins, and swung myself to an upright position on the saddle. Now I just had to hope my team wouldn’t miss the cart.//
+
+(if: ((history:) contains "Nelly Collins"))[//For Nelly it was easy. She didn't miss once and she did with a smile on her face.//
+(text-colour:magenta)[Nelly: That's all I got boss.]
+//She winked then readied herself to get back on her horse.//]
+(text-colour:magenta)[Nelly: See ya in town!]
+(if: ((history:) contains "Eugene Bell"))[//Eugene looked annoyed someone must have been trying to talk to him in the train. He did say he wasn't a team player.//
+(text-colour:blue)[Eugene: Last time I work on a team.]
+(text-colour:#b45d3f)[Lottie: I couldn't convince you to do it again?]
+//He rolled his eyes and smirked before he was off to town.//]
+(if: ((history:) contains "Timmy Coolguy"))[(text-colour:orange)[Timmy: Miss I can't.]
+//He was holding back tears.//
+(text-colour:#b45d3f)[Lottie: Just give me your hand. We'll get out of here soon enough.]]
+(if: ((history:) contains "Eleanor Martinez"))[
+//Eleanor concentrated before she attempted to toss the money. She narrowed her eyes and then went for it. She almost missed it.//
+(text-colour:#b45d3f)[Lottie: Good one!]
+(text-colour:purple)[Eleanor: Thanks.]]
+(if: ((history:) contains "Alfred Bray"))[//Alfred's arms were shaking.//
+(text-colour:#b45d3f)[Lottie: Just do what you can. Some money is better than none.]
+(text-colour:red)[Alfred: Right. ] 
+//Some bags missed the cart, but he got a few good swings in there.//
 ]
+
+[[Next->Heist 8]]
+
+
+:: Heist 8 {"position":"1525,3200","size":"100,100"}
+//I met the Renegade Rouges back in town. They were eager to split up the money.//
+(text-colour:#b45d3f)[Lottie: How are we feeling?]
+(if: ((history:) contains "Nelly Collins"))[
+(text-colour:magenta)[Nelly: Great! I'd say we did pretty well team!]]
+(if: ((history:) contains "Eugene Bell"))[ 
+(text-colour:blue)[Eugene: I can't complain.]]
+(if: ((history:) contains "Timmy Coolguy"))[(text-colour:orange)[Timmy: Ready to do it again!]
+(text-colour:#b45d3f)[Lottie: I think you need a few more years kid.]]
+(if: ((history:) contains "Eleanor Martinez"))[
+(text-colour:purple)[Eleanor: Money's Money.]]
+(if: ((history:) contains "Alfred Bray"))[
+(text-colour:red)[Alfred: I'll be sore tomorrow.]]
+
+[[Check to see how much you made->End]]
 
 
 :: Help the boy up 1 {"position":"600,625","size":"100,100"}
@@ -638,7 +689,6 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Next->Meeting Nelly 3.5]]
 
 
-
 :: Meeting Nelly 3.5 {"position":"975,100","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': There’s a train that's passing through Rustvale tomorrow night with a shipment full of gold. I’m planning on getting it before another gang does. How about it?]
 
@@ -662,7 +712,6 @@ The town was similar to others I've spent time in. Before I get too into plannin
 //I couldn't help but grin.//
 
 [[Next->Meeting Nelly 4.5]]
-
 
 
 :: Meeting Nelly 4.5 {"position":"1225,100","size":"100,100"}
@@ -752,7 +801,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 (text-colour:#b45d3f)[''Lottie'': The seamstress? Hm, well someone happened to rip a hole in my skirt, so I need to be heading to the seamstress, myself. Will you take me there, Timmy?]
 
-//Timmy nods sheepishly, recognizing that he was the one who tore my skirt. Together, Timmy and I start walking toward the seamstress’ shop)//
+//Timmy nods sheepishly, recognizing that he was the one who tore my skirt. Together, Timmy and I start walking toward the seamstress’ shop//
 
 [[ Next->Meeting Eleanor 1]]
 
@@ -803,7 +852,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (if: not ((history:) contains "Eleanor Martinez"))[[[Eleanor Martinez]]]
 
 
-:: Pick Your Team (remove) {"position":"250,3400","size":"100,100"}
+:: Pick Your Team (remove) {"position":"250,3275","size":"100,100"}
 //This is it. Who do I want to pull off this heist.//
 
 (checkbox: bind _nelly, "Nelly Collins")
@@ -819,7 +868,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (else:)[(set: $selectedCount to 0)(if: _nelly)[(set: $selectedCount to it + 1)](if: _eugene)[(set: $selectedCount to it + 1)](if: _eleanor)[(set: $selectedCount to it + 1)](if: _timmy)[(set: $selectedCount to it + 1)](if: _alfred)[(set: $selectedCount to it + 1)](if: $selectedCount is not 3)[You must select exactly three characters!](else:)[yay]
 
 
-:: Pick your group {"position":"250,3275","size":"100,100"}
+:: Pick your group {"position":"250,3350","size":"100,100"}
 Pick your group!
 
 (checkbox: bind _nelly, "Nelly Collins")
@@ -839,11 +888,11 @@ Pick your group!
 :: Pick your group 1 {"position":"375,3075","size":"100,100"}
 //I had Timmy round up the people I spoke to. His instructions were clear, tell them to meet me behind the saloon right after the sun sets. So here I am waiting for them to arrive. I decided I would only need three people in my crew to pull this off. I had to be very careful with my choice. Just one wrong step and that’s money gone.//
 
-Timmy: Miss! Miss! They’re coming! Well I think… I did tell them to come. 
-Eugene: And here you had me thinking you were going to come find me.
-Lottie: Sorry to disappoint. 
-Eugene: Kid sure knows how to annoy someone. 
-Timmy: Hey! I’m not a kid!
+(text-colour:orange)[Timmy: Miss! Miss! They’re coming! Well I think… I did tell them to come.] 
+(text-colour:blue)[Eugene: And here you had me thinking you were going to come find me.]
+(text-colour:#b45d3f)[Lottie: Sorry to disappoint.] 
+(text-colour:blue)[Eugene: Kid sure knows how to annoy someone.] 
+(text-colour:orange)[Timmy: Hey! I’m not a kid!]
 
 [[Next->Pick your group 2]]
 
@@ -851,30 +900,35 @@ Timmy: Hey! I’m not a kid!
 :: Pick your group 2 {"position":"525,3075","size":"100,100"}
 //Eugene rolled his eyes. Out of the corner of my eye I could see Nelly approach the group.//
 
-Nelly: I can’t lie to you I didn’t think a little boy was going to be in on this. But he sure is a cutie!
-Timmy: Hey!
-Lottie: He’s not a little boy.
+(text-colour:magenta)[Nelly: I can’t lie to you I didn’t think a little boy was going to be in on this. But he sure is a cutie!]
+(text-colour:orange)[Timmy: Hey!]
+(text-colour:#b45d3f)[Lottie: He’s not a little boy.]
 //I clarified and notice a smirk on Timmy’s face//
-Alfred: Don’t you think it’s dangerous to involve a child.
-Eleanor: I agree. 
-Lottie: First he’s not a kid and second he’s not necessarily involved just helping out.
-Timmy: Huh? But I thought?
+(text-colour:red)[Alfred: Don’t you think it’s dangerous to involve a child.]
+(text-colour:purple)[Eleanor: I agree. ]
+(text-colour:#b45d3f)[Lottie: First he’s not a kid and second he’s not necessarily involved just helping out.]
+(text-colour:orange)[Timmy: Huh? But I thought?]
 //I held up a hand in warning for him to keep quiet.//
-Lottie: Timmy not now.
+(text-colour:#b45d3f)[Lottie: Timmy not now.]
 
 [[Next->Pick your group 3]]
 
 
 :: Pick your group 3 {"position":"650,3075","size":"100,100"}
 //Eugene looked around at the group. I could tell he did not realize this was going to be a team effort. He looked unamused.//
-Eugene: Grandpa over here is supposed to help out. He got to be kidding.
+(text-colour:blue)[Eugene: Grandpa over here is supposed to help out. He got to be kidding.]
 //He laughed and Alfred shifted cleary not pleased.//
-Alfred: At least I haven’t been aged by a life of crime. 
-Eugene: I don’t look a day over twenty. Don’t be bitter, you weren’t born with my good looks.
+(text-colour:red)[Alfred: At least I haven’t been aged by a life of crime.] 
+(text-colour:blue)[Eugene: I don’t look a day over twenty. Don’t be bitter, you weren’t born with my good looks.]
 //Eleanor spoke under breath. Eugene and Alfred continued to bicker until Nelly spoke over them.// 
-Nelly: While they are over there determining who can spit farther would you be so kind Lottie and tell us what is going on?
-//Everyone fell quiet.//
-Lottie: Right… Well I need a crew to rob a train. But I only need three of you.
+(text-colour:magenta)[Nelly: While they are over there determining who can spit farther would you be so kind Lottie and tell us what is going on?]
+//Everyone fell quiet. Besides for Timmy who screamed out...//
+(text-colour:orange)[Timmy: But first we need a name! I got it! I got it! The Renegade Rouges!]
+//A few of them laughed.//
+(text-colour:purple)[Eleanor: I like that Timmy, but what is going on, Lottie?]
+(text-colour:#b45d3f)[Lottie: Right… We'll use that name Timmy.]
+//I winked at him and he smiled with pride.//
+(text-colour:#b45d3f)[Lottie: Well I need a crew to rob a train, but I only need three of you.]
 
 [[Pick Your Team]]
 
@@ -1010,15 +1064,15 @@ I still don't know exactly where the seamtress is... I guess I'll just head wher
 
 (text-colour:#b45d3f)[''Lottie'': Well- Nevermind that, when did you get here, Timmy?]
 
-[[Next->Run into Timmy again 2]] 
+[[Next->Run into Timmy again 2]]
 
 
 :: Run into Timmy again 2 {"position":"1200,2650","size":"100,100"}
 (text-colour:orange)[''Timmy'': Oh I just got here! Haha, I saw you come into the store after I left, and I thought this time I could actually hear where the meeting spot is!]
 
-(if: (((history:)contains "Help the boy up 1") or ((history:) contains "Be mean to the boy 1"))(text-colour:#b45d3f)[''Lottie'': (//This time? He must not have heard it when he was listening to me and Nellie in the saloon.//)]
+(if: (((history:)contains "Help the boy up 1")))+ (elseif: ((history:) contains "Be mean to the boy 1"))[(text-colour:#b45d3f)[''Lottie'': (//This time? He must not have heard it when he was listening to me and Nelly in the saloon.//)]
 
-(text-colour:orange)[''Timmy'': (//pouting slightly//) I wanted to hear your whole conversation, but I had to run an errand for Miss Pierce.]
+(text-colour:orange)[''Timmy'': (//pouting slightly//) I wanted to hear your whole conversation, but I had to run an errand for Miss Pierce.]]
 
 (text-colour:#b45d3f)[''Lottie'': //(Eleanor looks relieved. I think she's glad he didn't (if: ((history:) contains "Ask if she was an outlaw 1"))[ hear her say she came from an outlaw family.](else:)[ see her throw a needle at me.])// ]
 
@@ -1026,7 +1080,7 @@ I still don't know exactly where the seamtress is... I guess I'll just head wher
 
 (text-colour:orange)[''Timmy'': No! It was important! Now I can join you on your heist!]
 
-[[Next->Run into Timmy again 3]] 
+[[Next->Run into Timmy again 3]]
 
 
 :: Run into Timmy again 3 {"position":"1325,2650","size":"100,100"}
@@ -1052,11 +1106,7 @@ I still don't know exactly where the seamtress is... I guess I'll just head wher
 
 (text-colour:#b45d3f)[Lottie: I guess I'll head out for now. See ya.]
 
-[[Head to the ranch->Walking to Ranch]] 
-
-
-
-
+[[Head to the ranch->Walking to Ranch]]
 
 
 :: Saloon Start {"position":"300,200","size":"100,100"}
@@ -1168,32 +1218,33 @@ I still don't know exactly where the seamtress is... I guess I'll just head wher
 }
 
 
-
 :: Walking to Ranch {"position":"275,2850","size":"100,100"}
+//After that interaction I needed to clear my head. I wondered around town and stumbled upon the horse ranch. That was where I was meant to head anyways before getting distracted. Horses were out grazing the grass and in the distance I saw a home that I could only assume belonged to the ranch owner. How is one supposed to catch a train without horses? If I could just convince the owner to help me out.// 
+
 [[Next->Meeting Alfred 1]]
 
 
-:: \[Alfred Bray {"position":"775,3175","size":"100,100"}
+:: \[Alfred Bray {"position":"900,3300","size":"100,100"}
 
 
 
-:: \[Eleanor Martinez {"position":"775,3400","size":"100,100"}
+:: \[Eleanor Martinez {"position":"900,3300","size":"100,100"}
 
 
 
-:: \[Eugene Bell {"position":"1125,3375","size":"100,100"}
+:: \[Eugene Bell {"position":"900,3300","size":"100,100"}
 
 
 
-:: \[Nelly Collins {"position":"1050,3550","size":"100,100"}
+:: \[Nelly Collins {"position":"900,3300","size":"100,100"}
 
 
 
-:: \[Start the Heist {"position":"1325,3200","size":"100,100"}
+:: \[Start the Heist {"position":"900,3300","size":"100,100"}
 
 
 
-:: \[Timmy Coolguy {"position":"900,3400","size":"100,100"}
+:: \[Timmy Coolguy {"position":"900,3275","size":"100,100"}
 
 
 
@@ -1201,6 +1252,7 @@ I still don't know exactly where the seamtress is... I guess I'll just head wher
 tw-story {
   background-color: #e5d09d;
   color: 			#dd8d4c;
+  text-align:center;
   
 }
 h1{
