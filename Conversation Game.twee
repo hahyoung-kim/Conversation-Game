@@ -64,7 +64,7 @@ Conversation Game
 (text-colour:#b45d3f)[''Lottie'': That’s all, I guess. I hope I’ll see you again. Farewell for now, dear seamstress.]
 
 
-:: \ Do absolutely nothing 1 {"position":"900,2050","size":"100,100"}
+:: \ Do absolutely nothing 1 {"position":"925,2000","size":"100,100"}
 (text-colour:purple)[''Eleanor'': … ]
 (text-colour:#b45d3f)[''Lottie'': ... ]
 (text-colour:purple)[''Eleanor'': If you have nothing better to do, please leave madam. You are distracting me, and I have other work to do.]
@@ -125,7 +125,7 @@ Conversation Game
 [[ Wait for her to finish  -> Wait for her to finish 1]] | [[  Compliment her skills ->  Compliment her skills 1]]
 
 
-:: Alfred {"position":"900,3075","size":"100,100"}
+:: Alfred Bray {"position":"900,3075","size":"100,100"}
 (if: (count: (history:), "Pick Your Team") is 1)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 2)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 3)[[[Start the Heist]]]
@@ -238,13 +238,13 @@ I guess I'll just head wherever my feet take me and hope it lands me where I nee
 [[ Next->Meeting Eleanor 3]]
 
 
-:: Eleanor {"position":"1225,3175","size":"100,100"}
+:: Eleanor Martinez {"position":"1100,3075","size":"100,100"}
 (if: (count: (history:), "Pick Your Team") is 1)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 2)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 3)[[[Start the Heist]]]
 
 
-:: Eugene {"position":"1175,2925","size":"100,100"}
+:: Eugene Bell {"position":"1000,2975","size":"100,100"}
 (if: (count: (history:), "Pick Your Team") is 1)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 2)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 3)[[[Start the Heist]]]
@@ -260,6 +260,39 @@ I guess I'll just head wherever my feet take me and hope it lands me where I nee
 (text-colour:#b45d3f)[''Lottie'': //(She has quite the obvious tell. Anyone can see that she’s lying.)//]
 
 [[ She’s lying  -> She’s lying 1]] | [[ Watch her work for a while -> Watch her work for a while 1]]
+
+
+:: Heist 1 {"position":"1325,2875","size":"100,100"}
+(if: ((history:) contains "Nelly Collins"))[//Nelly came on horse with a smile on her face. Like she was ready to take on anything.//
+(text-colour:magenta)[Nelly: You ready?]
+(text-colour:#b45d3f)[Lottie: As ready as I can be.]
+(text-colour:magenta)[Nelly: I've got a feeling luck is on our side.]
+//She started to ride off without me.//]
+(if: ((history:) contains "Eugene Bell"))[//Eugene was a little later than I expected.//
+(text-colour:blue)[Eugene: I'm not used to this team thing.]
+(text-colour:#b45d3f)[Lottie: Well as long as you can follow instructions you'll be fine.]
+(text-colour:blue)[Eugene: Can't say I enjoy that. Don't worry about me this isn't my first rodeo.]
+(text-colour:#b45d3f)[Lottie: Right well shall we.]
+//Our crew wasn't all here yet. I thought I would let him get a head start. Luckily he didn't check to see if I was following.//]
+(if: ((history:) contains "Timmy Coolguy"))[//I was worried the kid wasn't going to make it, but then he appeared.//
+(text-colour:orange)[Timmy: Sorry Miss...I got lost, but that doesn't change how ready I am.]
+//He stood confidently as if he was trying to convince me further that he deserved to be there.//
+(text-colour:#b45d3f)[Lottie: Save the confidence when the heist starts kid.]]
+(if: ((history:) contains "Eleanor Martinez"))[//Eleanor was quiet when she approached not that really surprised me.//
+(text-colour:purple)[Eleanor: Lottie.]
+(text-color:#b45d3f)[Lottie: Eleanor.]
+//I guess at least she spoke to me.//]
+(if: ((history:) contains "Alfred Bray"))[//Alfred was the last to join. And here I had the assumption he would be the first one here. I guess it took him a little longer because he brought horses along with him.//
+(text-colour:red)[Alfred: Now if anything happens to these beauties it's on you.]
+(text-colour:#b45d3f)[Lottie: Nothing's going to happen to them. That's a promise.]
+//He seemed contempt with my answer and waited for further instructions.//
+]
+[[Next->Heist 2]]
+
+
+
+:: Heist 2 {"position":"1450,2875","size":"100,100"}
+
 
 
 :: Help the boy up 1 {"position":"625,525","size":"100,100"}
@@ -543,7 +576,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Wait for the seamstress  ->Wait for the seamstress 1]] | [[Poke around the store->Poke around the store 1]]
 
 
-:: Nelly Collins {"position":"1125,2775","size":"100,100"}
+:: Nelly Collins {"position":"1200,3075","size":"100,100"}
 (if: (count: (history:), "Pick Your Team") is 1)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 2)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 3)[[[Start the Heist]]]
@@ -612,12 +645,12 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Head to meet the seamstress ->Meeting Timmy 1]]
 
 
-:: Pick Your Team {"position":"950,2925","size":"100,100"}
+:: Pick Your Team {"position":"875,2950","size":"100,100"}
 (if: not ((history:) contains "Nelly Collins"))[[[Nelly Collins]]]
-(if: not ((history:) contains "Eugene"))[[[Eugene Bell]]]
-(if: not ((history:) contains "Alfred"))[[[Alfred Bray]]]
-(if: not ((history:) contains "Timmy"))[[[Timmy]]]
-(if: not ((history:) contains "Eleanor"))[[[Eleanor]]]
+(if: not ((history:) contains "Eugene Bell"))[[[Eugene Bell]]]
+(if: not ((history:) contains "Alfred Bray"))[[[Alfred Bray]]]
+(if: not ((history:) contains "Timmy Coolguy"))[[[Timmy Coolguy]]]
+(if: not ((history:) contains "Eleanor Martinez"))[[[Eleanor Martinez]]]
 
 
 :: Pick Your Team (remove) {"position":"275,3300","size":"100,100"}
@@ -633,7 +666,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 (if: _nelly)[(set: $nelly to 1)](if: _eugene)[(set: $eugene to 1)](if: _eleanor)[(set: $eleanor to 1)](if: _alfred)[(set: $alfred to 1)](if: _timmy)[(set: $timmy to 1)]
 
 (if: (_nelly or _eugene or _eleanor or _alfred or _timmy) is false)[ You must select at least one character!]
-(else:)[(set: $selectedCount to 0)(if: _nelly)[(set: $selectedCount to it + 1)](if: _eugene)[(set: $selectedCount to it + 1)](if: _eleanor)[(set: $selectedCount to it + 1)](if: _timmy)[(set: $selectedCount to it + 1)](if: _alfred)[(set: $selectedCount to it + 1)](if: $selectedCount is not 3)[You must select exactly three characters!](else:)[[Start the Heist]]]]
+(else:)[(set: $selectedCount to 0)(if: _nelly)[(set: $selectedCount to it + 1)](if: _eugene)[(set: $selectedCount to it + 1)](if: _eleanor)[(set: $selectedCount to it + 1)](if: _timmy)[(set: $selectedCount to it + 1)](if: _alfred)[(set: $selectedCount to it + 1)](if: $selectedCount is not 3)[You must select exactly three characters!](else:)[yay]
 
 
 :: Pick your group {"position":"275,3175","size":"100,100"}
@@ -799,16 +832,18 @@ I still don't know exactly where the seamtress is. Eugene said it was just down 
 
 //I smiled sweetly//
 
-(text-colour:	#b45d3f)[Lottie: Whatever's your favorite to make]
+(text-colour:	#b45d3f)[Lottie: Whatever's your favorite to make.]
 
 [[Next-> Saloon 2]]
 
 
-:: Start the Heist {"position":"400,3300","size":"100,100"}
+:: Start the Heist {"position":"1200,2875","size":"100,100"}
+//I knew the train would come by town early in the day. I told my crew, the Renegade Rogues, to meet at the edge of town and from there we would head towards the tracks. I had received information of which train the money was in, train eight. As long as I could remember the number all should go as planned. Catch the train, pick the lock, get the money, and get back to town. Seems simple enough. As long as nothing crazy happens. We all have the same objective. If one of us is falling behind, the goal is still to get to the train.//
+
+[[Next->Heist 1]]
 
 
-
-:: Timmy {"position":"1050,3075","size":"100,100"}
+:: Timmy Coolguy {"position":"1000,3075","size":"100,100"}
 (if: (count: (history:), "Pick Your Team") is 1)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 2)[[[Pick Your Team]]]
 (elseif: (count: (history:), "Pick Your Team") is 3)[[[Start the Heist]]]
@@ -864,15 +899,15 @@ I still don't know exactly where the seamtress is. Eugene said it was just down 
 [[Next->Meeting Alfred 1]]
 
 
-:: \[Alfred Bray {"position":"825,3300","size":"100,100"}
+:: \[Alfred Bray {"position":"800,3075","size":"100,100"}
 
 
 
-:: \[Eleanor {"position":"925,3450","size":"100,100"}
+:: \[Eleanor Martinez {"position":"800,3300","size":"100,100"}
 
 
 
-:: \[Eugene Bell {"position":"950,3675","size":"100,100"}
+:: \[Eugene Bell {"position":"1150,3275","size":"100,100"}
 
 
 
@@ -880,15 +915,11 @@ I still don't know exactly where the seamtress is. Eugene said it was just down 
 
 
 
-:: \[Pick Your Team Test {"position":"1112.5,3200","size":"100,100"}
-
-
-
 :: \[Start the Heist {"position":"1350,3100","size":"100,100"}
 
 
 
-:: \[Timmy {"position":"950,3350","size":"100,100"}
+:: \[Timmy Coolguy {"position":"925,3300","size":"100,100"}
 
 
 
