@@ -151,10 +151,10 @@ Conversation Game
 [[Next->Be mean to the boy 2]]
 
 
-:: Be mean to the boy 2 {"position":"875,650","size":"100,100"}
+:: Be mean to the boy 2 {"position":"925,625","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': Man… What a day… Alright kid. I’ll bite. What’s this secret you’re going on about?]
 
-(text-colour:orange)[''???:'' ‘M not a kid! My name’s Timmy Coolguy. I’m an outlaw, just like you! I heard you talking about a heist earlier while I was sneaking around, doing outlaw things.]
+(text-colour:orange)[''???:'' ‘M not a kid! My name’s Timmy Coolguy. I’m an outlaw, just like you! I heard you talking about a heist earlier while I was sneaking around, doing outlaw things.](set:$know_Timmys_name to true)
 
 [[Deny it->Deny it 3]] | [[Don't Deny->Don't Deny 1]]
 
@@ -290,7 +290,6 @@ I guess I'll just head wherever my feet take me and hope it lands me where I nee
 [[Next->Heist 2]]
 
 
-
 :: Heist 2 {"position":"1450,2875","size":"100,100"}
 
 
@@ -300,7 +299,7 @@ I guess I'll just head wherever my feet take me and hope it lands me where I nee
 
 (text-colour:#b45d3f)[''Lottie'':  My bad, kid. Where were you headed off to with all this stuff anyways?]
 
-(text-colour:orange)[''???:' 'Oh! I was running an errand for the town seamstress. Wait, no! Don’t call me kid! My name is Timmy. Timmy Coolguy. I’m the best errand runner around, and I’m also an outlaw in training!]
+(text-colour:orange)[''???:' 'Oh! I was running an errand for the town seamstress. Wait, no! Don’t call me kid! My name is Timmy. Timmy Coolguy. I’m the best errand runner around, and I’m also an outlaw in training!](set:$know_Timmys_name to true)
 
 (text-colour:#b45d3f)[''Lottie'':  Right… Hey, Timmy? Usually outlaws don’t go around yelling that they’re outlaws for all the world to hear. ]
 
@@ -320,9 +319,10 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 
 :: Keep Poking 1 {"position":"775,1675","size":"100,100"}
-//Lottie continues to dig around the store, even bending down slightly to look under things.//
+//I continue to dig around the store, even bending down slightly to look under things.//
 
 (text-colour:purple)[''Martinez'': Madam, please stop that. It is distracting.]
+
 (text-colour:#b45d3f)[''Lottie'': //(Gotcha, Miss Seamstress.)//]
 
 [[Give Up ->Wait for the seamstress 2]] | [[Keep Poking ->Keep Poking 2]]
@@ -382,7 +382,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 
 :: Meeting Eleanor 1 {"position":"625,1225","size":"100,100"}
-//Timmy bursts into the seamstress’s shop with a loud greeting.//
+(set:$Timmy_on_team to true)//Timmy bursts into the seamstress’s shop with a loud greeting.//
 
 (text-colour:orange)[''Timmy'': Hi Miss Lawrence! Hi Miss Martinez! I got your things for you!]
 
@@ -400,37 +400,34 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 
 :: Meeting Eleanor 2 {"position":"575,1375","size":"100,100"}
-//Guess I should talk to the seamstress.//
+(if:$TImmy_on_team is true)[//It looks like Timmy really likes the seamstress. ]Guess there's nothing to do but talk to her, now.// 
+
 (text-colour:#b45d3f)[''Lottie'': ‘Scuse me?]
+
 (text-colour:purple)[''Martinez'': …]
-//Must not be one for words.//
+
+//She must not be one for words. That's alright, I can talk enough for the both of us.//
+
 (text-colour:#b45d3f)[''Lottie'': Hey there, I got a rip in my skirt and I’m looking to get it fixed.]
+
 (text-colour:purple)[''Martinez'': I am busy right now. Please wait.]
+
 //She’s not even bothering to look at me!//
 
 
-[[Wait for the seamstress  ->Wait for the seamstress 1]] | [[Poke around the store->Poke around the store 1]] | [[ Mention Timmy->Mention Timmy 1]]
+[[Wait for the seamstress  ->Wait for the seamstress 1]] | [[Poke around the store->Poke around the store 1]](if:$Timmy_on_team is true)[ | [[ Mention Timmy->Mention Timmy 1]]]
 
 
-:: Meeting Eleanor 3 {"position":"825,1300","size":"100,100"}
-//I managed to find the seamstress after a few minutes of walking. As I enter the store, Timmy, the boy who had bumped into me earlier runs out of the store. I definitely could’ve saved a bit of my time if I’d asked the kid for directions. Oh well, I’m here now.//
+:: Meeting Eleanor 3 {"position":"825,1225","size":"100,100"}
+(set:$Timmy_on_team to false)//I managed to find the seamstress after a few minutes of walking. As I enter the store, (if:$know_Timmys_name is true)[Timmy] (else:)[the boy who had bumped into me earlier] runs out of the store. I definitely could’ve saved a bit of my time if I’d asked the kid for directions. Oh well, I’m here now.//
 
 //I looked around the shop. It’s small and stuffed full of dresses and suits in various states of completion. A lone woman sits behind the counter, tucked away behind a rather impressively large stack of spools of thread and fabrics. She glances up when I enter but otherwise makes no sound or movement.//
 
-[[Next ->Meeting Eleanor 4]]
+[[Next ->Meeting Eleanor 2]]
 
 
-:: Meeting Eleanor 4 {"position":"975,1400","size":"100,100"}
-//Guess there's nothing else to do but talk..//
-(text-colour:#b45d3f)[''Lottie'': ‘Scuse me?]
-(text-colour:purple)[''Martinez'': …]
-//Must not be one for words.//
-(text-colour:#b45d3f)[''Lottie'': Hey there, I got a rip in my skirt and I’m looking to get it fixed.]
-(text-colour:purple)[''Martinez'': I am busy right now. Please wait.]
-//She’s not even bothering to look at me!//
+:: Meeting Eleanor 4 {"position":"1250,1375","size":"100,100"}
 
-
-[[Wait for the seamstress  ->Wait for the seamstress 1]] | [[Poke around the store->Poke around the store 1]]
 
 
 :: Meeting Eugene 1 {"position":"625,125","size":"100,100"}
@@ -539,26 +536,26 @@ The town was similar to others I've spent time in. Before I get too into plannin
 
 
 :: Meeting Timmy 1 {"position":"625,400","size":"100,100"}
-(text-colour:#b45d3f)[''Lottie'':  …Almost noon, huh. It’s getting kinda warm ‘round here.]
+(set:$know_Timmys_name to false)(set:$Timmy_on_team to false)(text-colour:#b45d3f)[''Lottie'':  …Almost noon, huh. It’s getting kinda warm ‘round here.]
 
-//I sighed and shaded my eyes from the sun with my hand. Before I could get moving toward the seamstress, something slamed into the side of my leg.//
+//I sigh and shade my eyes from the sun with my hand. Before I can get moving toward the seamstress, something slams into the side of my leg.//
 
 (text-colour:orange)[''???:'' Ouch!]
 
-//I looked down at the little boy who has been thrown onto the ground near my feet. He is surrounded by a few scattered tin cans and a bag of flour from the general store. As I looked down at him, I notices that my skirt has a rip in it. Ugh this kid, I'll make a note to go to the seamstress to mend her skirt.//
+//I look down at the little boy who has been thrown onto the ground near my feet. He is surrounded by a few scattered tin cans and a bag of flour from the general store. As I look down at him, I notice that my skirt has a rip in it. Ugh this kid, I have to make a note to go to the seamstress to mend my skirt later...//
 
 
 [[Next->Meeting Timmy 2]]
 
 
-:: Meeting Timmy 2 {"position":"750,400","size":"100,100"}
+:: Meeting Timmy 2 {"position":"750,375","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': What the… A kid? ]
 
 (text-colour:orange)[''???:'' I’m not a kid! I know I’m kinda short, but you shoulda been watching where you were goin’, miss! ]
 
 (text-colour:#b45d3f)[//This kid… Was he the one that tore my skirt? He looks kinda pitiful, sitting on the ground like that.//]
 
-[[Help the boy up->Help the boy up 1]] | [[Be mean to the boy->Be mean to the boy 1]] | [[ Ignore the boy entirely->Meeting Eleanor 1]]
+[[Help the boy up->Help the boy up 1]] | [[Be mean to the boy->Be mean to the boy 1]] | [[ Ignore the boy entirely->Meeting Eleanor 3]]
 
 
 :: Mention Timmy 1 {"position":"475,1550","size":"100,100"}
@@ -599,7 +596,7 @@ The town was similar to others I've spent time in. Before I get too into plannin
 [[Next->Offer him a possibility to be on the team 2]]
 
 
-:: Offer him a possibility to be on the team 2 {"position":"1025,1200","size":"100,100"}
+:: Offer him a possibility to be on the team 2 {"position":"1000,1175","size":"100,100"}
 (text-colour:orange)[''Timmy:'' Yes, ma’am! These are actually for the town seamstress, so I can’t go back home just yet.]
 
 (text-colour:#b45d3f)[''Lottie'': The seamstress? Hm, well someone happened to rip a hole in my skirt, so I need to be heading to the seamstress, myself. Will you take me there, Timmy?]
@@ -775,8 +772,10 @@ Lottie: Right… Well I need a crew to rob a train. But I only need three of you
 
 :: Poke around the store 1 {"position":"775,1550","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': //(Hmmm… This store is pretty well stocked. I wonder if there’s any tools that might be useful on the heist.)//]
-// Lottie begins to walk around the store and browses the plentiful skeins of cloth and spools of thread. As she noses around, the seamstress visibly gets annoyed but still remains silent. //
-(text-colour:#b45d3f)[''Lottie'': //(Oh? Got some kinda reaction from that. I gotta get her to talk to me somehow…)//]
+
+// I begin to walk around the store and browse the plentiful skeins of cloth and spools of thread. As I noses around, the seamstress visibly gets annoyed but still remains silent. //
+
+(text-colour:#b45d3f)[''Lottie'': //(Heh. Got some kinda reaction from that. I gotta get her to talk to me somehow…)//]
 
 [[Give Up ->Wait for the seamstress 2]] | [[Keep Poking ->Keep Poking 1]]
 
@@ -881,16 +880,22 @@ I still don't know exactly where the seamtress is. Eugene said it was just down 
 
 :: Wait for the seamstress 1 {"position":"650,1550","size":"100,100"}
 (text-colour:#b45d3f)[''Lottie'': …]
+
 (text-colour:purple)[''Martinez'': …]
+
 //This is awkward. I didn't really plan on all this waiting around.//
 
 [[Poke around the store->Poke around the store 1]]
 
 
 :: Wait for the seamstress 2 {"position":"900,1675","size":"100,100"}
+(text-colour:#b45d3f)[''Lottie'': //(Maybe I should back off for a bit...)//]
+
 (text-colour:#b45d3f)[''Lottie'': …]
+
 (text-colour:purple)[''Martinez'': …]
-//This is awkward. I didn't really plan on all this waiting around.//
+
+(text-colour:#b45d3f)[''Lottie'': …]//This is awkward. I didn't really plan on all this waiting around.//
 
 [[Give Up ->Wait for the seamstress 2]] | [[Keep Poking ->Keep Poking 2]]
 
