@@ -291,7 +291,70 @@ I guess I'll just head wherever my feet take me and hope it lands me where I nee
 
 
 :: Heist 2 {"position":"1450,2875","size":"100,100"}
+//Traveling to the railroad tracks was easy, but waiting for the train proved to be difficult. I was starting to get anxious that maybe I got it wrong. I could tell the others were also starting to get restless. Part of me was also wondering if Wild Bunch my previous group was going to show up. //
 
+[[Next->Heist 3]]
+
+
+:: Heist 3 {"position":"1450,3000","size":"100,100"}
+//Just when I thought I had got it wrong. I could hear the train in the distance.//
+(if: ((history:) contains "Nelly Collins"))[
+(text-colour:magenta)[Nelly: Here we go!]
+//Then she was off to catch the train.//]
+(if: ((history:) contains "Eugene Bell"))[//Eugene give me a wink before he started to chase the train.//]
+(if: ((history:) contains "Timmy Coolguy"))[//Timmy looked scared.//
+(text-colour:orange)[Timmy: I'm sorry Miss...this is scarier than I thought.]
+(text-colour:#b45d3f)[Lottie: It's okay. Just follow my lead.]]
+(if: ((history:) contains "Eleanor Martinez"))[//Eleanor didn't speak she just gave me a look of encouragement.//] 
+(if: ((history:) contains "Alfred Bray"))[
+(text-colour:red)[Alfred: Lead the way Lottie.]]
+
+//I took off following the train. Over and over I repeated the train number to myself. Train eight. Train eight. Train eight. I carefully was looking at each train catching the number, but it was moving so fast I could have easily missed it. I caught a glimpse of the a red eight on the train. Now it was just a matter of keeping up, so I could jump aboard.//
+
+[[Next->Heist 4]]
+
+
+:: Heist 4 {"position":"1575,3000","size":"100,100"}
+//My horse was steadily keeping up with train. I needed to find the right time to jump. I started to stand hoping I didn't lose my balance. I had to be quick. This was it I changed my footing, bent my knees, and jumped. I reached out my arms hoping to grasp the handle on the side of the train. My right hand missed but my left held on tight. I pulled myself up to the side of the train. Allowing myself to stand on the very narrow platform. After catching my breath I pulled a hairpin out of my hair and got to work on the lock.//
+
+[[Next->Heist 5]]
+
+
+:: Heist 5 {"position":"1675,3000","size":"100,100"}
+(if: ((history:) contains "Nelly Collins"))[//Nelly was hanging on waiting for me to finish.//
+(text-colour:magenta)[Nelly: I want to trust what you are doing, but we're wasting time.]]
+(if: ((history:) contains "Eugene Bell"))[(text-colour:blue)[Eugene: Lottie, hurry up. The longer you take the further we get from town.]
+(text-colour:#b45d3f)[Lottie: Yeah! I realized that. Just give me a second!]]
+(if: ((history:) contains "Timmy Coolguy"))[//Timmy was rattled after I had to pull him up on the platform with us. His face was white. Maybe picking him to come was a bad idea.//]
+(if: ((history:) contains "Eleanor Martinez"))[(text-colour:purple)[Eleanor: Let me.]
+//Eleanor took over picking the lock and easily opened it within seconds.//
+(text-colour:#b45d3f)[Lottie: Thanks.]
+(text-colour:purple)[Eleanor: Just part of the job right.]]
+
+[[Next->Heist 6]]
+
+
+:: Heist 6 {"position":"1800,3000","size":"100,100"}
+//Huge stacks of money was waiting for us.//
+
+(text-colour:#b45d3f)[Lottie: I'm going to grab what I can and then y'all can toss me what you can grab. We should fill up the cart easily and go.]
+
+(if: ((history:) contains "Nelly Collins"))[
+(text-colour:magenta)[Nelly: Yes Ma’am.]]
+(if: ((history:) contains "Eugene Bell"))[(text-colour:blue)[Eugene: You promise you can catch it.]
+//He lifted an eyebrow.//
+(text-colour:#b45d3f)[Lottie: This isn't my first rodeo]
+//I winked.//]
+(if: ((history:) contains "Timmy Coolguy"))[(text-colour:orange)[Timmy: I can do that.]
+//Poor kid's answer felt more like he was trying to reassure himself.//]
+(if: ((history:) contains "Eleanor Martinez"))[
+//Eleanor nodded even when it's almost all over she's not one to talk.//
+(text-colour:#b45d3f)[Lottie: Thanks again for back there.]
+(text-colour:purple)[Eleanor: Don't mention it.]]
+(if: ((history:) contains "Alfred Bray"))[
+(text-colour:red)[Alfred: Don't drop the money.]
+(text-colour:#b45d3f)[Lottie: You worry too much.]
+]
 
 
 :: Help the boy up 1 {"position":"625,525","size":"100,100"}
